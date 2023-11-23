@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://smriti-joshi.github.io/al-folio/sitemap.xml
+Sitemap: https://smriti-joshi.github.io/sitemap.xml
