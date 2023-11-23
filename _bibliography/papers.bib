@@ -1,84 +1,58 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{joshi2021nn,
+  title={nn-UNet training on CycleGAN-translated images for cross-modal domain adaptation in biomedical imaging},
+  author={Joshi, Smriti and Osuala, Richard and Mart{\'\i}n-Isla, Carlos and Campello, Victor M and Sendra-Balcells, Carla and Lekadir, Karim and Escalera, Sergio},
+  booktitle={International MICCAI Brainlesion Workshop},
+  pages={540--551},
+  year={2021},
+  organization={Springer},
+  abstract = {In recent years, deep learning models have considerably advanced the performance of segmentation tasks on Brain Magnetic Resonance Imaging (MRI). However, these models show a considerable performance drop when they are evaluated on unseen data from a different distribution. Since annotation is often a hard and costly task requiring expert supervision, it is necessary to develop ways in which existing models can be adapted to the unseen domains without any additional labelled information. In this work, we explore one such technique which extends the CycleGAN architecture to generate label-preserving data in the target domain. The synthetic target domain data is used to train the nn-UNet framework for the task of multi-label segmentation. The experiments are conducted and evaluated on the dataset [1] provided in the ‘Cross-Modality Domain Adaptation for Medical Image Segmentation’ challenge for segmentation of vestibular schwannoma (VS) tumour and cochlea on contrast enhanced (ceT1) and high resolution (hrT2) MRI scans. In the proposed approach, our model obtains dice scores (DSC) 0.73 and 0.49 for tumour and cochlea respectively on the validation set of the dataset. This indicates the applicability of the proposed technique to real-world problems where data may be obtained by different acquisition protocols as in [1] where hrT2 images are more reliable, safer, and lower-cost alternative to ceT1.},
+  code = {https://medigan.readthedocs.io/en/latest/models.html#cyclegan-brain-mri-t1-t2}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
+@article{DORENT2023102628,
+title = {CrossMoDA 2021 challenge: Benchmark of cross-modality domain adaptation techniques for vestibular schwannoma and cochlea segmentation},
+journal = {Medical Image Analysis},
+volume = {83},
+pages = {102628},
+year = {2023},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2022.102628},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841522002560},
+author = {Reuben Dorent and Aaron Kujawa and Marina Ivory and Spyridon Bakas and Nicola Rieke and Samuel Joutard and Ben Glocker and Jorge Cardoso and Marc Modat and Kayhan Batmanghelich and Arseniy Belkov and Maria Baldeon Calisto and Jae Won Choi and Benoit M. Dawant and Hexin Dong and Sergio Escalera and Yubo Fan and Lasse Hansen and Mattias P. Heinrich and Smriti Joshi and Victoriya Kashtanova and Hyeon Gyu Kim and Satoshi Kondo and Christian N. Kruse and Susana K. Lai-Yuen and Hao Li and Han Liu and Buntheng Ly and Ipek Oguz and Hyungseob Shin and Boris Shirokikh and Zixian Su and Guotai Wang and Jianghao Wu and Yanwu Xu and Kai Yao and Li Zhang and Sébastien Ourselin and Jonathan Shapey and Tom Vercauteren},
+keywords = {Domain adaptation, Segmentation, Vestibular schwannoma},
+abstract = {Domain Adaptation (DA) has recently been of strong interest in the medical imaging community. While a large variety of DA techniques have been proposed for image segmentation, most of these techniques have been validated either on private datasets or on small publicly available datasets. Moreover, these datasets mostly addressed single-class problems. To tackle these limitations, the Cross-Modality Domain Adaptation (crossMoDA) challenge was organised in conjunction with the 24th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2021). CrossMoDA is the first large and multi-class benchmark for unsupervised cross-modality Domain Adaptation. The goal of the challenge is to segment two key brain structures involved in the follow-up and treatment planning of vestibular schwannoma (VS): the VS and the cochleas. Currently, the diagnosis and surveillance in patients with VS are commonly performed using contrast-enhanced T1 (ceT1) MR imaging. However, there is growing interest in using non-contrast imaging sequences such as high-resolution T2 (hrT2) imaging. For this reason, we established an unsupervised cross-modality segmentation benchmark. The training dataset provides annotated ceT1 scans (N=105) and unpaired non-annotated hrT2 scans (N=105). The aim was to automatically perform unilateral VS and bilateral cochlea segmentation on hrT2 scans as provided in the testing set (N=137). This problem is particularly challenging given the large intensity distribution gap across the modalities and the small volume of the structures. A total of 55 teams from 16 countries submitted predictions to the validation leaderboard. Among them, 16 teams from 9 different countries submitted their algorithm for the evaluation phase. The level of performance reached by the top-performing teams is strikingly high (best median Dice score — VS: 88.4%; Cochleas: 85.7%) and close to full supervision (median Dice score — VS: 92.5%; Cochleas: 87.7%). All top-performing methods made use of an image-to-image translation approach to transform the source-domain images into pseudo-target-domain images. A segmentation network was then trained using these generated images and the manual annotations provided for the source image.}
+}
+
+@misc{lekadir2023futureai,
+      title={FUTURE-AI: International consensus guideline for trustworthy and deployable artificial intelligence in healthcare}, 
+      author={Karim Lekadir and Aasa Feragen and Abdul Joseph Fofanah and Alejandro F Frangi and Alena Buyx and Anais Emelie and Andrea Lara and Antonio R Porras and An-Wen Chan and Arcadi Navarro and Ben Glocker and Benard O Botwe and Bishesh Khanal and Brigit Beger and Carol C Wu and Celia Cintas and Curtis P Langlotz and Daniel Rueckert and Deogratias Mzurikwao and Dimitrios I Fotiadis and Doszhan Zhussupov and Enzo Ferrante and Erik Meijering and Eva Weicken and Fabio A González and Folkert W Asselbergs and Fred Prior and Gabriel P Krestin and Gary Collins and Geletaw S Tegenaw and Georgios Kaissis and Gianluca Misuraca and Gianna Tsakou and Girish Dwivedi and Haridimos Kondylakis and Harsha Jayakody and Henry C Woodruf and Hugo JWL Aerts and Ian Walsh and Ioanna Chouvarda and Irène Buvat and Islem Rekik and James Duncan and Jayashree Kalpathy-Cramer and Jihad Zahir and Jinah Park and John Mongan and Judy W Gichoya and Julia A Schnabel and Kaisar Kushibar and Katrine Riklund and Kensaku Mori and Kostas Marias and Lameck M Amugongo and Lauren A Fromont and Lena Maier-Hein and Leonor Cerdá Alberich and Leticia Rittner and Lighton Phiri and Linda Marrakchi-Kacem and Lluís Donoso-Bach and Luis Martí-Bonmatí and M Jorge Cardoso and Maciej Bobowicz and Mahsa Shabani and Manolis Tsiknakis and Maria A Zuluaga and Maria Bielikova and Marie-Christine Fritzsche and Marius George Linguraru and Markus Wenzel and Marleen De Bruijne and Martin G Tolsgaard and Marzyeh Ghassemi and Md Ashrafuzzaman and Melanie Goisauf and Mohammad Yaqub and Mohammed Ammar and Mónica Cano Abadía and Mukhtar M E Mahmoud and Mustafa Elattar and Nicola Rieke and Nikolaos Papanikolaou and Noussair Lazrak and Oliver Díaz and Olivier Salvado and Oriol Pujol and Ousmane Sall and Pamela Guevara and Peter Gordebeke and Philippe Lambin and Pieta Brown and Purang Abolmaesumi and Qi Dou and Qinghua Lu and Richard Osuala and Rose Nakasi and S Kevin Zhou and Sandy Napel and Sara Colantonio and Shadi Albarqouni and Smriti Joshi and Stacy Carter and Stefan Klein and Steffen E Petersen and Susanna Aussó and Suyash Awate and Tammy Riklin Raviv and Tessa Cook and Tinashe E M Mutsvangwa and Wendy A Rogers and Wiro J Niessen and Xènia Puig-Bosch and Yi Zeng and Yunusa G Mohammed and Yves Saint James Aquino and Zohaib Salahuddin and Martijn P A Starmans},
+      year={2023},
+      eprint={2309.12325},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      abstract = {Despite major advances in artificial intelligence (AI) for medicine and healthcare, the deployment and adoption of AI technologies remain limited in real-world clinical practice. In recent years, concerns have been raised about the technical, clinical, ethical and legal risks associated with medical AI. To increase real world adoption, it is essential that medical AI tools are trusted and accepted by patients, clinicians, health organisations and authorities. This work describes the FUTURE-AI guideline as the first international consensus framework for guiding the development and deployment of trustworthy AI tools in healthcare. The FUTURE-AI consortium was founded in 2021 and currently comprises 118 inter-disciplinary experts from 51 countries representing all continents, including AI scientists, clinicians, ethicists, and social scientists. Over a two-year period, the consortium defined guiding principles and best practices for trustworthy AI through an iterative process comprising an in-depth literature review, a modified Delphi survey, and online consensus meetings. The FUTURE-AI framework was established based on 6 guiding principles for trustworthy AI in healthcare, i.e. Fairness, Universality, Traceability, Usability, Robustness and Explainability. Through consensus, a set of 28 best practices were defined, addressing technical, clinical, legal and socio-ethical dimensions. The recommendations cover the entire lifecycle of medical AI, from design, development and validation to regulation, deployment, and monitoring. FUTURE-AI is a risk-informed, assumption-free guideline which provides a structured approach for constructing medical AI tools that will be trusted, deployed and adopted in real-world practice. Researchers are encouraged to take the recommendations into account in proof-of-concept stages to facilitate future translation towards clinical practice of medical AI.}
+}
+@article{osuala2023medigan,
+  title={medigan: a Python library of pretrained generative models for medical image synthesis},
+  author={Osuala, Richard and Skorupko, Grzegorz and Lazrak, Noussair and Garrucho, Lidia and Garc{\'\i}a, Eloy and Joshi, Smriti and Jouide, Socayna and Rutherford, Michael and Prior, Fred and Kushibar, Kaisar and others},
+  journal={Journal of Medical Imaging},
+  volume={10},
   number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  pages={061403--061403},
+  year={2023},
+  publisher={Society of Photo-Optical Instrumentation Engineers},
+  abstract = {Synthetic data generated by generative models can enhance the performance and capabilities of data-hungry deep learning models in medical imaging. However, there is (1) limited availability of (synthetic) datasets and (2) generative models are complex to train, which hinders their adoption in research and clinical applications. To reduce this entry barrier, we propose medigan, a one-stop shop for pretrained generative models implemented as an open-source framework-agnostic Python library. medigan allows researchers and developers to create, increase, and domain-adapt their training data in just a few lines of code. Guided by design decisions based on gathered end-user requirements, we implement medigan based on modular components for generative model (i) execution, (ii) visualisation, (iii) search & ranking, and (iv) contribution. The library's scalability and design is demonstrated by its growing number of integrated and readily-usable pretrained generative models consisting of 21 models utilising 9 different Generative Adversarial Network architectures trained on 11 datasets from 4 domains, namely, mammography, endoscopy, x-ray, and MRI. Furthermore, 3 applications of medigan are analysed in this work, which include (a) enabling community-wide sharing of restricted data, (b) investigating generative model evaluation metrics, and (c) improving clinical downstream tasks. In (b), extending on common medical image synthesis assessment and reporting standards, we show Fréchet Inception Distance variability based on image normalisation and radiology-specific feature extraction.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
-}
+@misc{osuala2023pre,
+      title={Pre- to Post-Contrast Breast MRI Synthesis for Enhanced Tumour Segmentation}, 
+      author={Richard Osuala and Smriti Joshi and Apostolia Tsirikoglou and Lidia Garrucho and Walter H. L. Pinaya and Oliver Diaz and Karim Lekadir},
+      year={2023},
+      eprint={2311.10879},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      abstract = {Despite its benefits for tumour detection and treatment, the administration of contrast agents in dynamic contrast-enhanced MRI (DCE-MRI) is associated with a range of issues, including their invasiveness, bioaccumulation, and a risk of nephrogenic systemic fibrosis. This study explores the feasibility of producing synthetic contrast enhancements by translating pre-contrast T1-weighted fat-saturated breast MRI to their corresponding first DCE-MRI sequence leveraging the capabilities of a generative adversarial network (GAN). Additionally, we introduce a Scaled Aggregate Measure (SAMe) designed for quantitatively evaluating the quality of synthetic data in a principled manner and serving as a basis for selecting the optimal generative model. We assess the generated DCE-MRI data using quantitative image quality metrics and apply them to the downstream task of 3D breast tumour segmentation. Our results highlight the potential of post-contrast DCE-MRI synthesis in enhancing the robustness of breast tumour segmentation models via data augmentation.},
+      code = {https://github.com/RichardObi/pre_post_synthesis.git}}
