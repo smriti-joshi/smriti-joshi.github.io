@@ -22,4 +22,4 @@ I graduated with MSc.(Hons) in Image processing and Computer Vision, jointly coo
 
 I am a member of <a href="https://conferences.miccai.org/2024/en/"><b>MICCAI 2024</b></a> Sponsorship Committee. I am also an active member of <a href = "https://africai.org/"><b>AFRICAI</b></a>: A network to promote AI for medical applications in the African continent. In 2023, I was a reviewer for IEEE Transactions in Medical Imaging and ECCV Workshop. 
 
-Feel free to drop me an <a href = "mailto:smriti.joshi@ub.edu"><b>email</b></a> for more information and collaborations. 
+Feel free to drop me an <a href = "mailto:smriti.joshi@ub.edu"><b>email</b></a> for more information and collaborations!
