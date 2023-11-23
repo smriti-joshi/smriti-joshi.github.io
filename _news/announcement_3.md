@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+title: A long announcement with details
+date: 2023-Oct-30
 inline: true
 related_posts: false
 ---
+Our paper accepted in <a href="https://spie.org/conferences-and-exhibitions/medical-imaging?SSO=1"><b>SPIE Medical Imaging, 2024<b><a> 🤩
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:

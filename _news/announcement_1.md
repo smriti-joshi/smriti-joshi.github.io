@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2023-Nov-03
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our abstract accepted in <a href='https://datascience.embs.org/2023/'> <b>IEEE EMBS Conference, 2023</b></a> 🤩
