@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student at Universitat de Barcelona
+subtitle: PhD Candidate at <a href="https://www.bcn-aim.org/">BCN-AIM</a>, Universitat de Barcelona
 
 profile:
   align: left
@@ -16,10 +16,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a doctoral student at <a href = "https://www.bcn-aim.org/"><b>BCN-AIM</b></a> laboratory in Universitat de Barcelona, under the supervision of Dr. Oliver Diaz Montesdeoca and Dr. Karim Lekadir. My current work focuses on development and evaluation of fair and robust methods for breast cancer treatment planning. My research is supported by <a href = "https://radioval.eu/"><b>RadioVal</b></a>, a European project on clinical validation of radiomics based methods for evaluating response of breast cancer to NAC.
+I am a PhD Candidate at <a href="https://www.bcn-aim.org/"><b>BCN-AIM</b></a> laboratory, Universitat de Barcelona, under the supervision of Dr. Oliver Diaz and Dr. Karim Lekadir. My research focuses on developing <b>trustworthy and robust AI</b> methods for medical imaging, with core expertise in <b>domain adaptation</b> and <b>uncertainty estimation</b>. I am a key researcher in <a href="https://radioval.eu/"><b>RadioVal</b></a>, an EU Horizon Europe project on clinical validation of AI methods for evaluating breast cancer treatment response.
 
-I graduated with MSc.(Hons) in Image processing and Computer Vision, jointly coordinated by  the Autonomous University of Madrid (Spain), University of Bordeaux (France), and Pázmány Péter Catholic University (Hungary) under the Erasmus Mundus programme. My master thesis was under the joint supervision of Dr. Hanspeter Pfister (<a href = "https://vcg.seas.harvard.edu/"><b>VCG Harvard, USA</b></a>) and Dr. Pascal Desbarats (<a href = "https://www.labri.fr/"><b>LaBRI, Bordeaux, France</b></a>) on connectomics segmentation. Parallely, I worked with Dr. Sergio Escalera (<a href = "http://www.cvc.uab.es/"><b>CVC, Barcelona, Spain</b></a>) for domain adaptation in Brain MRI.
+I co-organized the <a href="https://mama-mia.grand-challenge.org/"><b>MAMA-MIA Challenge @ MICCAI 2025</b></a> for generalizable and fair tumor segmentation and pathologic complete response prediction using Breast MRI. Our team also achieved a <b>Top-2</b> solution in the <a href="https://odelia-ai.eu/"><b>ODELIA Challenge @ MICCAI 2025</b></a>.
 
-I am a member of <a href="https://conferences.miccai.org/2024/en/"><b>MICCAI 2024</b></a> Sponsorship Committee. I am also an active member of <a href = "https://africai.org/"><b>AFRICAI</b></a>: A network to promote AI for medical applications in the African continent. In 2023, I was a reviewer for IEEE Transactions in Medical Imaging and ECCV Workshop. 
+Before my PhD, I was a Research Fellow at <a href="https://vcg.seas.harvard.edu/"><b>VCG SEAS, Harvard University</b></a>, working on unsupervised domain adaptation for large-scale connectomics. I hold an Honors MSc. in Image Processing and Computer Vision (Erasmus Mundus) from the Autonomous University of Madrid, University of Bordeaux, and Pázmány Péter Catholic University.
 
-Feel free to drop me an <a href = "mailto:smriti.joshi@ub.edu"><b>email</b></a> for more information and collaborations!
+I am an active member of <a href="https://africai.org/"><b>AFRICAI</b></a> and have coordinated international AI schools across Africa and South Asia. I served on the Grant Selection &amp; Sponsorship Committee for the <a href="https://conferences.miccai.org/2024/en/"><b>MICCAI 2024 LMIC Initiative</b></a>, leading selection of 50+ early-career researchers from lower-to-middle income countries.
+
+Feel free to drop me an <a href="mailto:smriti.joshi@ub.edu"><b>email</b></a> for more information and collaborations!
