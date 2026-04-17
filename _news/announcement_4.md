@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2022-07-15 
+date: 2023-Oct-06
 inline: true
+related_posts: false
 ---
 
-Our <a href='https://link.springer.com/chapter/10.1007/978-3-031-09002-8_47'> <b>crossmoda-challenge paper</b></a> was accepted!
+I gave a talk at <a href='https://www.efomp.org/index.php?r=pages&id=esmpe-about'><b>EMSPE event</b></a> on AI in Medical Physics 🎤
