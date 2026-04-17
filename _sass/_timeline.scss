@@ -1,0 +1,181 @@
+/*******************************************************************************
+ * About page enhancements
+ ******************************************************************************/
+
+.about-intro {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  margin-bottom: 1.1rem;
+  line-height: 1.5;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.1rem 0 1.3rem;
+
+  .rtag {
+    display: inline-block;
+    padding: 0.25rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: rgba(218, 127, 0, 0.1);
+    color: var(--global-theme-color);
+    border: 1.5px solid rgba(218, 127, 0, 0.3);
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(218, 127, 0, 0.2);
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .research-tags .rtag {
+    background: rgba(38, 152, 186, 0.12);
+    color: var(--global-theme-color);
+    border-color: rgba(38, 152, 186, 0.35);
+  }
+}
+
+/*******************************************************************************
+ * Timeline page
+ ******************************************************************************/
+
+.timeline-page {
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 2.5rem;
+
+    .filter-btn {
+      padding: 0.3rem 0.95rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--global-divider-color);
+      background: transparent;
+      color: var(--global-text-color);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Roboto', sans-serif;
+
+      &:focus { outline: none; }
+
+      &[data-cat="all"]        { &.active, &:hover { background: var(--global-theme-color); border-color: var(--global-theme-color); color: #fff; } }
+      &[data-cat="research"]   { &.active, &:hover { background: #d97706; border-color: #d97706; color: #fff; } }
+      &[data-cat="education"]  { &.active, &:hover { background: #2563eb; border-color: #2563eb; color: #fff; } }
+      &[data-cat="leadership"] { &.active, &:hover { background: #16a34a; border-color: #16a34a; color: #fff; } }
+      &[data-cat="challenges"] { &.active, &:hover { background: #dc2626; border-color: #dc2626; color: #fff; } }
+      &[data-cat="impact"]     { &.active, &:hover { background: #7c3aed; border-color: #7c3aed; color: #fff; } }
+    }
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 1.75rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background: var(--global-divider-color);
+    }
+  }
+
+  .tl-item {
+    position: relative;
+    margin-bottom: 1.25rem;
+
+    &.hidden { display: none; }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1.3rem;
+      top: 0.9rem;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid var(--global-divider-color);
+      background: var(--global-bg-color);
+      z-index: 1;
+    }
+
+    &.cat-research::before   { border-color: #d97706; background: #d97706; }
+    &.cat-education::before  { border-color: #2563eb; background: #2563eb; }
+    &.cat-leadership::before { border-color: #16a34a; background: #16a34a; }
+    &.cat-challenges::before { border-color: #dc2626; background: #dc2626; }
+    &.cat-impact::before     { border-color: #7c3aed; background: #7c3aed; }
+
+    .tl-card {
+      background: var(--global-card-bg-color);
+      border: 1px solid var(--global-divider-color);
+      border-radius: 10px;
+      padding: 0.9rem 1.15rem;
+      transition: box-shadow 0.2s;
+
+      &:hover {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .tl-header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.4rem;
+
+        .tl-date {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: var(--global-text-color-light);
+          white-space: nowrap;
+        }
+
+        .tl-badge {
+          font-size: 0.65rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          padding: 0.15rem 0.6rem;
+          border-radius: 999px;
+          color: #fff;
+
+          &.badge-research   { background: #d97706; }
+          &.badge-education  { background: #2563eb; }
+          &.badge-leadership { background: #16a34a; }
+          &.badge-challenges { background: #dc2626; }
+          &.badge-impact     { background: #7c3aed; }
+        }
+      }
+
+      .tl-title {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: var(--global-text-color);
+        margin-bottom: 0.25rem;
+      }
+
+      .tl-desc {
+        font-size: 0.82rem;
+        color: var(--global-text-color-light);
+        margin: 0;
+        line-height: 1.5;
+
+        a {
+          color: var(--global-theme-color);
+          &:hover { text-decoration: underline; }
+        }
+      }
+    }
+  }
+}
