@@ -2,262 +2,287 @@
 layout: page
 permalink: /timeline/
 title: timeline
-description: Research, leadership, impact, and the challenges I have taken on.
+description: A journey through affiliations, challenges, leadership, and impact.
 nav: true
 nav_order: 2
 ---
 
-<div class="timeline-page">
+<div class="timeline-page-v2">
 
-<div class="filter-row">
-  <button class="filter-btn active" data-cat="all">All</button>
-  <button class="filter-btn" data-cat="research">Research</button>
-  <button class="filter-btn" data-cat="education">Education</button>
-  <button class="filter-btn" data-cat="leadership">Leadership</button>
-  <button class="filter-btn" data-cat="challenges">Challenges</button>
-  <button class="filter-btn" data-cat="impact">Impact</button>
-</div>
+<!-- ================================================================
+     HORIZONTAL AFFILIATION TIMELINE
+     ================================================================ -->
 
-<div class="timeline">
+<section class="htl-section">
+  <p class="section-label">Affiliations &amp; Education</p>
 
-  <!-- 2021–Present: PhD -->
-  <div class="tl-item cat-research">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2021 &ndash; Present</span>
-        <span class="tl-badge badge-research">Research</span>
+  <div class="htl-scroll-wrapper">
+    <div class="htl-track">
+
+      <!-- â”€â”€ Node 1: BITS Pilani â”€â”€ -->
+      <div class="htl-node-group">
+        <button class="htl-main-btn" data-gallery="bits" aria-label="BITS Pilani">
+          <span class="htl-dot"></span>
+        </button>
+        <div class="htl-meta">
+          <span class="htl-years">2014 &ndash; 2018</span>
+          <span class="htl-name">MSc Physics</span>
+          <span class="htl-org">BITS Pilani, India</span>
+        </div>
+        <button class="htl-sub-btn" data-gallery="xlim" aria-label="XLIM Lab thesis">
+          <span class="htl-sub-dot"></span>
+          <span class="htl-sub-text">XLIM Lab, France<br><b>Thesis Exchange</b></span>
+        </button>
       </div>
-      <div class="tl-title">PhD Candidate &middot; BCN-AIM Lab, Universitat de Barcelona</div>
-      <p class="tl-desc">
-        Developing trustworthy and robust AI for medical imaging under Dr. Oliver Diaz and Dr. Karim Lekadir.
-        Core focus: domain adaptation and uncertainty estimation for breast MRI across diverse clinical settings.
-        Key researcher in <a href="https://radioval.eu/">RadioVal</a>, an EU Horizon Europe project on clinical AI validation.
-      </p>
+
+      <!-- â”€â”€ Node 2: Erasmus Mundus â”€â”€ -->
+      <div class="htl-node-group">
+        <button class="htl-main-btn" data-gallery="erasmus" aria-label="Erasmus Mundus MSc">
+          <span class="htl-dot"></span>
+        </button>
+        <div class="htl-meta">
+          <span class="htl-years">2019 &ndash; 2021</span>
+          <span class="htl-name">MSc IPCV (Honors)</span>
+          <span class="htl-org">Erasmus Mundus</span>
+        </div>
+        <button class="htl-sub-btn" data-gallery="harvard" aria-label="Harvard VCG thesis">
+          <span class="htl-sub-dot"></span>
+          <span class="htl-sub-text">Harvard VCG, USA<br><b>MSc Thesis</b></span>
+        </button>
+      </div>
+
+      <!-- â”€â”€ Node 3: BCN-AIM â”€â”€ -->
+      <div class="htl-node-group">
+        <button class="htl-main-btn" data-gallery="bcn" aria-label="BCN-AIM PhD">
+          <span class="htl-dot htl-dot--current"></span>
+        </button>
+        <div class="htl-meta">
+          <span class="htl-years">2021 &ndash; Present</span>
+          <span class="htl-name">PhD Candidate</span>
+          <span class="htl-org">BCN-AIM &middot; Universitat de Barcelona</span>
+        </div>
+      </div>
+
+    </div><!-- /.htl-track -->
+  </div><!-- /.htl-scroll-wrapper -->
+
+  <!-- Gallery / detail panel â€” hidden until a node is clicked -->
+  <div class="htl-panel is-hidden" id="htl-panel">
+    <div class="htl-panel-inner">
+      <button class="htl-panel-close" id="htl-panel-close" aria-label="Close panel">&times;</button>
+      <div class="htl-panel-header" id="htl-panel-header"></div>
+      <div class="htl-photo-grid" id="htl-photo-grid"></div>
     </div>
   </div>
 
-  <!-- 2021–Present: RadioVal Leadership -->
-  <div class="tl-item cat-leadership">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2021 &ndash; Present</span>
-        <span class="tl-badge badge-leadership">Leadership</span>
-      </div>
-      <div class="tl-title">AI Working Group Lead &middot; RadioVal, EU Horizon Europe</div>
-      <p class="tl-desc">
-        Leading the AI research workstream in <a href="https://radioval.eu/">RadioVal</a>, a multi-institution EU project focused on clinical validation of AI methods for evaluating breast cancer treatment response.
-      </p>
-    </div>
-  </div>
+</section>
 
-  <!-- 2021–Present: AFRICAI -->
-  <div class="tl-item cat-leadership">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2021 &ndash; Present</span>
-        <span class="tl-badge badge-leadership">Leadership</span>
-      </div>
-      <div class="tl-title">Active Member &middot; AFRICAI</div>
-      <p class="tl-desc">
-        Contributing to <a href="https://africai.org/">AFRICAI</a>, a network building African capacity in medical AI.
-        Coordinated international AI schools across Africa and South Asia, bringing together researchers and practitioners with limited access to flagship events.
-      </p>
-    </div>
-  </div>
+<!-- ================================================================
+     CATEGORY SECTIONS
+     ================================================================ -->
 
-  <!-- 2025: MICCAI 2025 paper -->
-  <div class="tl-item cat-impact">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2025</span>
-        <span class="tl-badge badge-impact">Impact</span>
-      </div>
-      <div class="tl-title">First-Author Paper Accepted &middot; MICCAI 2025</div>
-      <p class="tl-desc">
-        <em>Test-time adaptation for robust breast MRI tumor segmentation across diverse acquisition conditions</em> &mdash; addressing the real-world challenge of domain shift without retraining on target data.
-      </p>
-    </div>
-  </div>
+<div class="cat-sections">
 
-  <!-- 2025: MAMA-MIA Challenge -->
-  <div class="tl-item cat-challenges">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2025</span>
-        <span class="tl-badge badge-challenges">Challenge</span>
-      </div>
-      <div class="tl-title">Co-organizer &middot; MAMA-MIA Challenge @ MICCAI 2025</div>
-      <p class="tl-desc">
-        Designed and ran an open challenge on generalizable and fair tumor segmentation and pathologic complete response (pCR) prediction using breast MRI.
-        Brought together teams from across the world to push performance on underrepresented clinical distributions.
-        <a href="https://mama-mia.grand-challenge.org/">Grand Challenge page</a>.
-      </p>
+  <!-- â”€â”€ Challenges â”€â”€ -->
+  <section class="cat-section" id="sec-challenges">
+    <div class="cat-header">
+      <span class="cat-icon" style="background:#dc2626" aria-hidden="true"><i class="fas fa-bolt"></i></span>
+      <h2>Challenges</h2>
     </div>
-  </div>
+    <div class="cat-cards">
 
-  <!-- 2025: ODELIA Challenge -->
-  <div class="tl-item cat-challenges">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2025</span>
-        <span class="tl-badge badge-challenges">Challenge</span>
+      <div class="cat-card">
+        <div class="cat-card-title">MAMA-MIA Challenge &mdash; Co-organizer</div>
+        <div class="cat-card-when" style="color:#dc2626">MICCAI 2025</div>
+        <p class="cat-card-desc">Designed and ran an open challenge on generalizable and fair tumor segmentation and pathologic complete response (pCR) prediction using breast MRI. Brought together international teams to push performance on underrepresented clinical distributions. <a href="https://mama-mia.grand-challenge.org/" target="_blank" rel="noopener">Challenge page &rarr;</a></p>
       </div>
-      <div class="tl-title">Top-2 Solution &middot; ODELIA Challenge @ MICCAI 2025</div>
-      <p class="tl-desc">
-        Placed Top-2 in the <a href="https://odelia-ai.eu/">ODELIA</a> multi-center breast MRI challenge for AI-based lesion detection and classification, demonstrating strong cross-site generalizability.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2025: Co-authored papers -->
-  <div class="tl-item cat-impact">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2025</span>
-        <span class="tl-badge badge-impact">Impact</span>
+      <div class="cat-card">
+        <div class="cat-card-title">ODELIA Challenge &mdash; Top-2 Solution</div>
+        <div class="cat-card-when" style="color:#dc2626">MICCAI 2025</div>
+        <p class="cat-card-desc">Placed Top-2 in the <a href="https://odelia-ai.eu/" target="_blank" rel="noopener">ODELIA</a> multi-center breast MRI challenge for AI-based lesion detection and classification, demonstrating strong cross-site generalizability of our domain-adaptive approach.</p>
       </div>
-      <div class="tl-title">Co-authored Publications &middot; JMI, Scientific Data, Book Chapter</div>
-      <p class="tl-desc">
-        Contributing to three publications released in 2025: a review on generative AI for clinical imaging simulations (JMI), a large-scale dataset paper for breast MRI AI (Scientific Data), and a book chapter on stakeholder perspectives in AI development.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2024: MICCAI LMIC Committee -->
-  <div class="tl-item cat-leadership">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2024</span>
-        <span class="tl-badge badge-leadership">Leadership</span>
+    </div>
+  </section>
+
+  <!-- â”€â”€ Leadership â”€â”€ -->
+  <section class="cat-section" id="sec-leadership">
+    <div class="cat-header">
+      <span class="cat-icon" style="background:#16a34a" aria-hidden="true"><i class="fas fa-users"></i></span>
+      <h2>Leadership</h2>
+    </div>
+    <div class="cat-cards">
+
+      <div class="cat-card">
+        <div class="cat-card-title">AI Working Group Lead &mdash; RadioVal</div>
+        <div class="cat-card-when" style="color:#16a34a">2021 &ndash; Present</div>
+        <p class="cat-card-desc">Leading the AI research workstream in <a href="https://radioval.eu/" target="_blank" rel="noopener">RadioVal</a>, an EU Horizon Europe project on clinical validation of AI methods for evaluating breast cancer treatment response across European hospital networks.</p>
       </div>
-      <div class="tl-title">Grant Selection Committee &middot; MICCAI 2024 LMIC Initiative</div>
-      <p class="tl-desc">
-        Served on the Grant Selection &amp; Sponsorship Committee for the <a href="https://conferences.miccai.org/2024/en/">MICCAI 2024 LMIC Initiative</a>, leading the review and selection of 50+ early-career researchers from lower-to-middle income countries to attend a flagship international AI conference.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2024: SPIE paper -->
-  <div class="tl-item cat-impact">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2024</span>
-        <span class="tl-badge badge-impact">Impact</span>
+      <div class="cat-card">
+        <div class="cat-card-title">MICCAI 2024 LMIC Initiative &mdash; Committee Member</div>
+        <div class="cat-card-when" style="color:#16a34a">2024</div>
+        <p class="cat-card-desc">Served on the Grant Selection &amp; Sponsorship Committee for the <a href="https://conferences.miccai.org/2024/en/" target="_blank" rel="noopener">MICCAI 2024 LMIC Initiative</a>, leading review and selection of 50+ early-career researchers from lower-to-middle income countries to attend the flagship medical AI conference.</p>
       </div>
-      <div class="tl-title">Paper &middot; SPIE Medical Imaging 2024</div>
-      <p class="tl-desc">
-        <em>Uncertainty estimation for robust and generalizable breast MRI segmentation</em> &mdash; investigating how well-calibrated uncertainty signals can flag unreliable predictions in clinical AI systems.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2023: MedIA paper -->
-  <div class="tl-item cat-impact">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2023</span>
-        <span class="tl-badge badge-impact">Impact</span>
+      <div class="cat-card">
+        <div class="cat-card-title">International AI Schools &mdash; AFRICAI</div>
+        <div class="cat-card-when" style="color:#16a34a">2021 &ndash; Present</div>
+        <p class="cat-card-desc">Active member of <a href="https://africai.org/" target="_blank" rel="noopener">AFRICAI</a>. Coordinated international AI schools across Africa and South Asia, connecting researchers with limited access to flagship venues to global medical AI communities and mentors.</p>
       </div>
-      <div class="tl-title">Paper &middot; Medical Image Analysis 2023</div>
-      <p class="tl-desc">
-        Co-authored work on brain tumor segmentation published in Medical Image Analysis, a top journal in medical computer vision. Part of a multi-institution continual learning study.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2023: medigan JMI -->
-  <div class="tl-item cat-impact">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2023</span>
-        <span class="tl-badge badge-impact">Impact</span>
+    </div>
+  </section>
+
+  <!-- â”€â”€ Impact â”€â”€ -->
+  <section class="cat-section" id="sec-impact">
+    <div class="cat-header">
+      <span class="cat-icon" style="background:#7c3aed" aria-hidden="true"><i class="fas fa-star"></i></span>
+      <h2>Impact</h2>
+    </div>
+    <div class="cat-cards">
+
+      <div class="cat-card">
+        <div class="cat-card-title">Test-Time Adaptation for Breast MRI</div>
+        <div class="cat-card-when" style="color:#7c3aed">MICCAI 2025 &mdash; First Author</div>
+        <p class="cat-card-desc">Robust tumor segmentation under domain shift without retraining &mdash; addressing a core bottleneck for real-world deployment of clinical AI across diverse acquisition conditions.</p>
       </div>
-      <div class="tl-title">Paper &middot; Journal of Medical Imaging 2023 (medigan)</div>
-      <p class="tl-desc">
-        Co-authored <em>medigan</em>, a clinical AI framework for cancer imaging. Published in the Journal of Medical Imaging, with adoption across research groups working on medical image synthesis and augmentation.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2021: Harvard Fellowship -->
-  <div class="tl-item cat-research">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">Feb &ndash; Jul 2021</span>
-        <span class="tl-badge badge-research">Research</span>
+      <div class="cat-card">
+        <div class="cat-card-title">Uncertainty Estimation for Robust AI</div>
+        <div class="cat-card-when" style="color:#7c3aed">SPIE 2024 &mdash; First Author</div>
+        <p class="cat-card-desc">Investigated well-calibrated uncertainty signals for flagging unreliable predictions in breast MRI segmentation pipelines &mdash; a key ingredient for building clinician trust in AI systems.</p>
       </div>
-      <div class="tl-title">Research Fellow &middot; VCG SEAS, Harvard University</div>
-      <p class="tl-desc">
-        Worked on unsupervised domain adaptation for large-scale electron microscopy connectomics at the <a href="https://vcg.seas.harvard.edu/">Visual Computing Group</a>, School of Engineering and Applied Sciences. Brought medical AI transfer learning methods to neuroscience imaging at scale.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2021: MSc completed -->
-  <div class="tl-item cat-education">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2021</span>
-        <span class="tl-badge badge-education">Education</span>
+      <div class="cat-card">
+        <div class="cat-card-title">3 Co-authored Journal &amp; Book Publications</div>
+        <div class="cat-card-when" style="color:#7c3aed">2025</div>
+        <p class="cat-card-desc">Contributed to a JMI review on generative AI for imaging simulations, a Scientific Data paper on large-scale breast MRI datasets, and a book chapter on stakeholder perspectives in AI for healthcare.</p>
       </div>
-      <div class="tl-title">Honors MSc Completed &middot; Image Processing &amp; Computer Vision (Erasmus Mundus)</div>
-      <p class="tl-desc">
-        Graduated with Honors from the Erasmus Mundus Joint Master&rsquo;s in Image Processing and Computer Vision &mdash; a prestigious programme spanning three universities: Autonomous University of Madrid (Spain), University of Bordeaux (France), and P&aacute;zm&aacute;ny P&eacute;ter Catholic University (Hungary).
-      </p>
-    </div>
-  </div>
 
-  <!-- 2021: MICCAI BrainLes paper -->
-  <div class="tl-item cat-impact">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2021</span>
-        <span class="tl-badge badge-impact">Impact</span>
+      <div class="cat-card">
+        <div class="cat-card-title">medigan &mdash; Clinical AI Framework</div>
+        <div class="cat-card-when" style="color:#7c3aed">JMI 2023</div>
+        <p class="cat-card-desc">Co-authored <em>medigan</em>, an open-source framework for medical image synthesis adopted across multiple research groups working on synthetic data generation and augmentation.</p>
       </div>
-      <div class="tl-title">First-Author Paper &middot; MICCAI BrainLes Workshop 2021</div>
-      <p class="tl-desc">
-        <em>nnU-Net for brain tumor segmentation</em> &mdash; first peer-reviewed publication, contributing to the BraTS 2021 challenge benchmarks at the brain lesion workshop of MICCAI.
-      </p>
-    </div>
-  </div>
 
-  <!-- 2019–2021: Erasmus Mundus MSc -->
-  <div class="tl-item cat-education">
-    <div class="tl-card">
-      <div class="tl-header">
-        <span class="tl-date">2019 &ndash; 2021</span>
-        <span class="tl-badge badge-education">Education</span>
-      </div>
-      <div class="tl-title">Erasmus Mundus MSc &middot; Image Processing &amp; Computer Vision</div>
-      <p class="tl-desc">
-        Two-year joint master&rsquo;s programme across three European countries, specializing in computer vision, image analysis, and machine learning for visual data.
-      </p>
     </div>
-  </div>
+  </section>
 
-</div><!-- end .timeline -->
-</div><!-- end .timeline-page -->
+</div><!-- /.cat-sections -->
+</div><!-- /.timeline-page-v2 -->
 
 <script>
 (function () {
-  var buttons = document.querySelectorAll('.filter-btn');
-  var items   = document.querySelectorAll('.tl-item');
+  'use strict';
 
-  buttons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var cat = btn.getAttribute('data-cat');
+  /* Gallery data â€” add photo paths to the `photos` array for each entry */
+  var GALLERY_DATA = {
+    bits: {
+      title: 'MSc Physics &middot; BITS Pilani',
+      meta: '2014 &ndash; 2018 &middot; Pilani, Rajasthan, India',
+      desc: 'Four years studying Physics at the Birla Institute of Technology and Science (BITS Pilani), one of India\'s premier institutions for science and engineering. Built a strong quantitative foundation in classical mechanics, electrodynamics, statistical mechanics, and computational methods.',
+      photos: [
+        /* e.g. 'assets/img/bits_1.jpg' */
+      ]
+    },
+    xlim: {
+      title: 'Thesis Exchange &middot; XLIM Research Institute',
+      meta: 'During MSc &middot; Limoges, France',
+      desc: 'Conducted thesis research at the XLIM Research Institute (CNRS UMR 7252) in France. First international research experience at the intersection of applied physics and signal processing â€” the spark that led to a career in computational research.',
+      photos: []
+    },
+    erasmus: {
+      title: 'MSc Image Processing &amp; Computer Vision (Honors)',
+      meta: '2019 &ndash; 2021 &middot; Erasmus Mundus Joint Master\'s',
+      desc: 'Prestigious Erasmus Mundus Joint Master\'s across three European universities: Autonomous University of Madrid (Spain), University of Bordeaux (France), and P\u00e1zm\u00e1ny P\u00e9ter Catholic University (Hungary). Studied computer vision, image analysis, and ML for visual data. Graduated with Honors.',
+      photos: []
+    },
+    harvard: {
+      title: 'MSc Thesis &middot; VCG SEAS, Harvard University',
+      meta: '2021 &middot; Cambridge, Massachusetts, USA',
+      desc: 'Conducted MSc thesis research at the Visual Computing Group, School of Engineering and Applied Sciences (VCG SEAS), Harvard University. Focused on unsupervised domain adaptation for large-scale electron microscopy connectomics data.',
+      photos: []
+    },
+    bcn: {
+      title: 'Research Associate &rarr; PhD Candidate &middot; BCN-AIM, UB',
+      meta: '2021 &ndash; Present &middot; Barcelona, Spain',
+      desc: 'Joined BCN-AIM as a Research Associate in 2021 and became a PhD Candidate from May 2022. Research focuses on trustworthy and robust AI for medical imaging &mdash; domain adaptation and uncertainty estimation for breast MRI, within the EU Horizon RadioVal project.',
+      photos: []
+    }
+  };
 
-      buttons.forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
+  var PLACEHOLDER_COUNT = 3;
 
-      items.forEach(function (item) {
-        if (cat === 'all' || item.classList.contains('cat-' + cat)) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
+  var panel     = document.getElementById('htl-panel');
+  var panelHdr  = document.getElementById('htl-panel-header');
+  var photoGrid = document.getElementById('htl-photo-grid');
+  var closeBtn  = document.getElementById('htl-panel-close');
+  var mainBtns  = document.querySelectorAll('.htl-main-btn');
+  var subBtns   = document.querySelectorAll('.htl-sub-btn');
+  var currentId = null;
+
+  function buildGrid(photos) {
+    var html = '';
+    if (photos && photos.length) {
+      photos.forEach(function (src) {
+        html += '<div class="photo-slot"><img src="/' + src + '" alt="" loading="lazy"></div>';
+      });
+    } else {
+      for (var i = 0; i < PLACEHOLDER_COUNT; i++) {
+        html += '<div class="photo-slot"><div class="photo-placeholder"><i class="fas fa-image"></i><span>Add a photo</span></div></div>';
+      }
+    }
+    return html;
+  }
+
+  function showPanel(id) {
+    var d = GALLERY_DATA[id];
+    if (!d) return;
+    currentId = id;
+
+    panelHdr.innerHTML =
+      '<h3>' + d.title + '</h3>' +
+      '<div class="htl-ph-meta">' + d.meta + '</div>' +
+      '<p>' + d.desc + '</p>';
+    photoGrid.innerHTML = buildGrid(d.photos);
+
+    /* Re-trigger entrance animation */
+    panel.classList.remove('is-visible');
+    panel.classList.add('is-hidden');
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        panel.classList.remove('is-hidden');
+        panel.classList.add('is-visible');
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
     });
-  });
+  }
+
+  function hidePanel() {
+    panel.classList.remove('is-visible');
+    panel.classList.add('is-hidden');
+    clearActive();
+    currentId = null;
+  }
+
+  function clearActive() {
+    mainBtns.forEach(function (b) { b.classList.remove('active'); });
+    subBtns.forEach(function (b) { b.classList.remove('active'); });
+  }
+
+  function handleClick(btn) {
+    var id = btn.getAttribute('data-gallery');
+    if (currentId === id) { hidePanel(); return; }
+    clearActive();
+    btn.classList.add('active');
+    showPanel(id);
+  }
+
+  mainBtns.forEach(function (btn) { btn.addEventListener('click', function () { handleClick(btn); }); });
+  subBtns.forEach(function (btn) { btn.addEventListener('click', function () { handleClick(btn); }); });
+  closeBtn.addEventListener('click', hidePanel);
+
 }());
 </script>
