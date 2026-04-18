@@ -85,8 +85,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
     <div class="abt-intro-block">
       <h1 class="abt-name">Smriti Joshi</h1>
       <div class="about-intro">PhD Researcher &middot; Trustworthy AI in HealthCare</div>
-  </div>
-  <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
+  <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <strong><a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
 
   <!-- <div class="research-tags">
     <span class="rtag">Uncertainty Estimation</span>
@@ -97,7 +96,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
   </div> -->
   <div class="tl-social-row">
     <a class="tl-social-icon sch" href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-    <a class="tl-social-icon li" href="https://www.linkedin.com/in/smriti1610" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a class="tl-social-icon li" href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
     <a class="tl-social-icon gh" href="https://github.com/smriti-joshi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
     <a class="tl-social-icon em" href="mailto:smriti.joshi@ub.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
   </div>
