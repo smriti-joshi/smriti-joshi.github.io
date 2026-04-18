@@ -21,7 +21,7 @@ nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 
 /* ---- About hero ---- */
 .abt-hero{display:flex;align-items:flex-start;gap:2.4rem;margin-bottom:2rem;}
-.abt-photo{width:160px;height:160px;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);}
+.abt-photo{width:160px;height:160px;border-radius:16px;object-fit:cover;flex-shrink:0; solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);}
 .abt-intro-block{flex:1;}
 .abt-intro-block h1.abt-name{font-size:2.4rem;font-weight:800;color:#1c1c1e;margin-bottom:0.2rem;margin-top:0;line-height:1.15;}
 .about-intro{font-size:1.15rem;font-weight:600;color:rgba(60,30,5,0.72);margin-bottom:0;}
