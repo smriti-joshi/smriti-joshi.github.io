@@ -3,7 +3,7 @@ layout: page
 permalink: /timeline/
 title: timeline
 description: A journey through affiliations, challenges, leadership, and impact.
-nav: true
+nav: false
 nav_order: 2
 ---
 
