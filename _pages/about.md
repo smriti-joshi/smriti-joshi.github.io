@@ -17,7 +17,7 @@ nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 .abv-nav-link{padding:0.28rem 0.88rem;border-radius:999px;font-size:0.78rem;font-weight:600;color:rgba(30,20,10,0.58) !important;text-decoration:none !important;transition:background 0.18s,color 0.18s;}
 .abv-nav-link:hover,.abv-nav-link.active{background:rgba(139,92,246,0.15);color:#7c3aed !important;text-decoration:none !important;}
 .abt-hero{display:flex;align-items:flex-start;gap:2rem;margin-bottom:1.6rem;}
-.abt-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.82);box-shadow:0 4px 22px rgba(0,0,0,0.1);}
+.abt-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.82);box-shadow:0 4px 22px rgba(0,0,0,0.1);}
 .abt-intro-block h1.abt-name{font-size:1.85rem;font-weight:800;color:#1c1c1e;margin-bottom:0.18rem;margin-top:0;}
 .abt-intro-block .abt-subtitle{font-size:0.88rem;color:rgba(40,30,15,0.58);margin-bottom:0.8rem;}
 .about-intro{font-size:1.05rem;font-weight:600;color:#5b2d00;margin-bottom:0.8rem;}
@@ -84,19 +84,17 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
     <img class="abt-photo" src="/assets/img/prof_pic.jpg" alt="Smriti Joshi">
     <div class="abt-intro-block">
       <h1 class="abt-name">Smriti Joshi</h1>
-      <div class="abt-subtitle">PhD Researcher &middot; Trustworthy AI for Medical Imaging</div>
-      <p class="about-intro">Building AI that clinicians can trust &mdash; and that works for everyone.</p>
-    </div>
+      <div class="about-intro">PhD Researcher &middot; Trustworthy AI in HealthCare</div>
   </div>
-  <p class="abt-bio">I'm a PhD Candidate at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, developing robust and trustworthy AI for medical imaging. My work sits at the intersection of <strong>domain adaptation</strong> and <strong>uncertainty estimation</strong> &mdash; making breast MRI AI that holds up across hospitals, scanners, and populations.</p>
-  <p class="abt-bio">Before my PhD, I was a <strong>Research Fellow at <a href="https://vcg.seas.harvard.edu/">Harvard</a></strong> (VCG SEAS) and hold an <strong>Erasmus Mundus MSc</strong> in Image Processing and Computer Vision from three European universities. I co-organized <a href="https://mama-mia.grand-challenge.org/"><strong>MAMA-MIA @ MICCAI 2025</strong></a> and served on the MICCAI 2024 LMIC committee &mdash; helping 50+ early-career researchers from lower-income countries access the global AI community.</p>
-  <div class="research-tags">
+  <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
+
+  <!-- <div class="research-tags">
     <span class="rtag">Uncertainty Estimation</span>
     <span class="rtag">Domain Adaptation</span>
     <span class="rtag">Breast MRI</span>
     <span class="rtag">Robust AI</span>
     <span class="rtag">EU Horizon</span>
-  </div>
+  </div> -->
   <div class="tl-social-row">
     <a class="tl-social-icon sch" href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
     <a class="tl-social-icon li" href="https://www.linkedin.com/in/smriti1610" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
