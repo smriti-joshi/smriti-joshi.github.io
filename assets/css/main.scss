@@ -11,3 +11,9 @@ $max-content-width: {{ site.max_width }};
 @import "layout";
 @import "base";
 @import "timeline";
+
+// Font Awesome Icons
+@import "font-awesome/fontawesome";
+@import "font-awesome/brands";
+@import "font-awesome/solid";
+@import "font-awesome/regular";
