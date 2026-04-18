@@ -7,7 +7,7 @@ nav_order: 1
 ---
 
 <style>
-body,html{background:linear-gradient(135deg,#ffd3ac 0%,#ffb5ab 25%,#e39a7b 50%,#b298e7 75%,#b8e3e9 100%) fixed !important;background-attachment:fixed !important;}
+body,html{background:linear-gradient(135deg,#ffe8d6 0%,#ffd9d3 25%,#f5d4bb 50%,#d9c8f5 75%,#e7f6fa 100%) fixed !important;background-attachment:fixed !important;}
 .container{max-width:1200px !important;padding-left:1.5rem !important;padding-right:1.5rem !important;}
 .post{background:transparent;}
 .post-header{display:none;}
@@ -21,7 +21,7 @@ nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 
 /* ---- About hero ---- */
 .abt-hero{display:flex;align-items:flex-start;gap:2.4rem;margin-bottom:2rem;}
-.abt-photo{width:160px;height:160px;border-radius:16px;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);filter:brightness(1.15) contrast(1.05);}
+.abt-photo{width:160px;height:160px;border-radius:16px;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);}
 .abt-intro-block{flex:1;}
 .abt-intro-block h1.abt-name{font-size:2.4rem;font-weight:800;color:#1c1c1e;margin-bottom:0.2rem;margin-top:0;line-height:1.15;}
 .about-intro{font-size:1.15rem;font-weight:600;color:rgba(60,30,5,0.72);margin-bottom:0;}
@@ -79,9 +79,7 @@ nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 footer.fixed-bottom{background:rgba(255,255,255,0.56) !important;backdrop-filter:blur(10px) !important;-webkit-backdrop-filter:blur(10px) !important;border-top:1px solid rgba(255,255,255,0.45) !important;}
 footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d3d !important;}
 
-/* ---- Image brightness ---- */
-img{filter:brightness(1.15) contrast(1.08);}
-.photo-slot img{filter:brightness(1.15) contrast(1.08);}
+
 
 /* ---- Mobile ---- */
 @media(max-width:640px){
