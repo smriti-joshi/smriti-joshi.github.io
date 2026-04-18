@@ -100,9 +100,7 @@ img{filter:brightness(1.15) contrast(1.08);}
 <!-- In-page section navigation (no "About" here — site navbar already has it) -->
 <nav class="abv-nav" id="abv-nav" role="navigation" aria-label="Page sections">
   <a class="abv-nav-link active" href="#sec-about">About</a>
-  <a class="abv-nav-link" href="#sec-affiliations">Affiliations</a>
   <a class="abv-nav-link" href="#sec-challenges">Challenges</a>
-  <a class="abv-nav-link" href="#sec-leadership">Leadership</a>
   <a class="abv-nav-link" href="#sec-impact">Impact</a>
   <a class="abv-nav-link" href="#sec-publications">Publications</a>
 </nav>
@@ -125,12 +123,8 @@ img{filter:brightness(1.15) contrast(1.08);}
     </div>
   </div>
   <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <strong><a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
-</section>
 
-<!-- ============================================================
-     AFFILIATIONS
-     ============================================================ -->
-<section class="afp-section" id="sec-affiliations" aria-label="Affiliations and Education">
+
   <p class="section-label">Affiliations &amp; Education</p>
   <div class="htl-scroll-wrapper">
     <div class="htl-track">
