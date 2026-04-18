@@ -25,6 +25,10 @@ hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
+img {
+  filter: brightness(1.15) contrast(1.08);
+}
+
 table {
   td,
   th {

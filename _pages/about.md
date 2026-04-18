@@ -21,15 +21,12 @@ nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 
 /* ---- About hero ---- */
 .abt-hero{display:flex;align-items:flex-start;gap:2.4rem;margin-bottom:2rem;}
-.abt-photo{width:160px;height:160px;border-radius:16px;object-fit:cover;flex-shrink:0; solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);}
+.abt-photo{width:160px;height:160px;border-radius:16px;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);filter:brightness(1.15) contrast(1.05);}
 .abt-intro-block{flex:1;}
 .abt-intro-block h1.abt-name{font-size:2.4rem;font-weight:800;color:#1c1c1e;margin-bottom:0.2rem;margin-top:0;line-height:1.15;}
 .about-intro{font-size:1.15rem;font-weight:600;color:rgba(60,30,5,0.72);margin-bottom:0;}
 .abt-bio{font-size:1.05rem;line-height:1.78;color:rgba(28,18,8,0.82);margin-bottom:0.7rem;}
 .abt-bio a{color:#7c3aed !important;}.abt-bio strong,.abt-bio b{color:#1c1c1e;}
-.research-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.8rem 0 1.4rem;}
-.rtag{display:inline-block;padding:0.28rem 0.95rem;border-radius:999px;font-size:0.82rem;font-weight:600;background:rgba(139,92,246,0.1);color:#7c3aed;border:1.5px solid rgba(139,92,246,0.28);transition:background 0.2s;}
-.rtag:hover{background:rgba(139,92,246,0.2);}
 .tl-social-row{display:flex;flex-wrap:wrap;gap:0.85rem;margin-top:1rem;}
 .tl-social-icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.82);font-size:1.5rem;text-decoration:none !important;transition:transform 0.2s,background 0.2s,box-shadow 0.2s;box-shadow:0 2px 10px rgba(0,0,0,0.07);}
 .tl-social-icon i{color:inherit;display:inline-block;}
@@ -82,6 +79,10 @@ nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 footer.fixed-bottom{background:rgba(255,255,255,0.56) !important;backdrop-filter:blur(10px) !important;-webkit-backdrop-filter:blur(10px) !important;border-top:1px solid rgba(255,255,255,0.45) !important;}
 footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d3d !important;}
 
+/* ---- Image brightness ---- */
+img{filter:brightness(1.15) contrast(1.08);}
+.photo-slot img{filter:brightness(1.15) contrast(1.08);}
+
 /* ---- Mobile ---- */
 @media(max-width:640px){
   .abt-hero{flex-direction:column;align-items:center;text-align:center;gap:1.2rem;}
@@ -124,13 +125,6 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
     </div>
   </div>
   <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <strong><a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
-  <div class="research-tags">
-    <span class="rtag">Uncertainty Estimation</span>
-    <span class="rtag">Domain Adaptation</span>
-    <span class="rtag">Breast MRI</span>
-    <span class="rtag">Robust AI</span>
-    <span class="rtag">EU Horizon</span>
-  </div>
 </section>
 
 <!-- ============================================================
