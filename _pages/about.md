@@ -110,7 +110,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
      ============================================================ -->
 <section class="afp-section" id="sec-about" aria-label="About">
   <div class="abt-hero">
-    <img class="abt-photo" src="/assets/img/prof_pic.jfif" alt="Smriti Joshi">
+    <img class="abt-photo" src="/assets/img/smriti.png" alt="Smriti Joshi">
     <div class="abt-intro-block">
       <h1 class="abt-name">Smriti Joshi</h1>
       <div class="about-intro">PhD Researcher &middot; Trustworthy AI in Healthcare</div>
