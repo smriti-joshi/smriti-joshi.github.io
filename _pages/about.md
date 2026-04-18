@@ -116,9 +116,9 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
       <div class="about-intro">PhD Researcher &middot; Trustworthy AI in Healthcare</div>
       <div class="tl-social-row">
         <a class="tl-social-icon sch" href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        <a class="tl-social-icon li" href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ai ai-linkedin"></i></a>
-        <a class="tl-social-icon gh" href="https://github.com/smriti-joshi" target="_blank" rel="noopener" aria-label="GitHub"><i class="ai ai-github"></i></a>
-        <a class="tl-social-icon em" href="mailto:smriti.joshi@ub.edu" aria-label="Email"><i class="ai ai-envelope"></i></a>
+        <a class="tl-social-icon li" href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a class="tl-social-icon gh" href="https://github.com/smriti-joshi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a class="tl-social-icon em" href="mailto:smriti.joshi@ub.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </div>
