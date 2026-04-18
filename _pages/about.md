@@ -8,65 +8,94 @@ nav_order: 1
 
 <style>
 body,html{background:linear-gradient(135deg,#ffd3ac 0%,#ffb5ab 25%,#e39a7b 50%,#b298e7 75%,#b8e3e9 100%) fixed !important;background-attachment:fixed !important;}
-.container{max-width:1200px !important;}
+.container{max-width:1200px !important;padding-left:1.5rem !important;padding-right:1.5rem !important;}
 .post{background:transparent;}
 .post-header{display:none;}
 nav#navbar{background:rgba(255,255,255,0.62) !important;backdrop-filter:blur(14px) !important;-webkit-backdrop-filter:blur(14px) !important;border-bottom:1px solid rgba(255,255,255,0.35) !important;box-shadow:0 1px 14px rgba(0,0,0,0.07) !important;}
 nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
-.abv-nav{position:sticky;top:62px;z-index:900;display:flex;justify-content:center;flex-wrap:wrap;gap:0.2rem;padding:0.45rem 0.9rem;background:rgba(255,255,255,0.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:999px;margin:0 auto 2.8rem;width:fit-content;box-shadow:0 2px 16px rgba(0,0,0,0.08);border:1px solid rgba(255,255,255,0.72);}
-.abv-nav-link{padding:0.28rem 0.88rem;border-radius:999px;font-size:0.78rem;font-weight:600;color:rgba(30,20,10,0.58) !important;text-decoration:none !important;transition:background 0.18s,color 0.18s;}
+
+/* ---- In-page pill nav ---- */
+.abv-nav{position:sticky;top:62px;z-index:900;display:flex;justify-content:center;flex-wrap:wrap;gap:0.3rem;padding:0.5rem 1rem;background:rgba(255,255,255,0.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:999px;margin:0 auto 3rem;width:fit-content;max-width:100%;box-shadow:0 2px 16px rgba(0,0,0,0.08);border:1px solid rgba(255,255,255,0.72);}
+.abv-nav-link{padding:0.32rem 1rem;border-radius:999px;font-size:0.85rem;font-weight:600;color:rgba(30,20,10,0.58) !important;text-decoration:none !important;transition:background 0.18s,color 0.18s;white-space:nowrap;}
 .abv-nav-link:hover,.abv-nav-link.active{background:rgba(139,92,246,0.15);color:#7c3aed !important;text-decoration:none !important;}
-.abt-hero{display:flex;align-items:flex-start;gap:2rem;margin-bottom:1.6rem;}
-.abt-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.82);box-shadow:0 4px 22px rgba(0,0,0,0.1);}
-.abt-intro-block h1.abt-name{font-size:1.85rem;font-weight:800;color:#1c1c1e;margin-bottom:0.18rem;margin-top:0;}
-.abt-intro-block .abt-subtitle{font-size:0.88rem;color:rgba(40,30,15,0.58);margin-bottom:0.8rem;}
-.about-intro{font-size:1.05rem;font-weight:600;color:#5b2d00;margin-bottom:0.8rem;}
-.abt-bio{font-size:0.91rem;line-height:1.72;color:rgba(30,20,10,0.8);margin-bottom:0.55rem;}
+
+/* ---- About hero ---- */
+.abt-hero{display:flex;align-items:flex-start;gap:2.4rem;margin-bottom:2rem;}
+.abt-photo{width:160px;height:160px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.88);box-shadow:0 6px 28px rgba(0,0,0,0.12);}
+.abt-intro-block{flex:1;}
+.abt-intro-block h1.abt-name{font-size:2.4rem;font-weight:800;color:#1c1c1e;margin-bottom:0.2rem;margin-top:0;line-height:1.15;}
+.about-intro{font-size:1.15rem;font-weight:600;color:rgba(60,30,5,0.72);margin-bottom:0;}
+.abt-bio{font-size:1.05rem;line-height:1.78;color:rgba(28,18,8,0.82);margin-bottom:0.7rem;}
 .abt-bio a{color:#7c3aed !important;}.abt-bio strong,.abt-bio b{color:#1c1c1e;}
-.research-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin:0.7rem 0 1.2rem;}
-.rtag{display:inline-block;padding:0.22rem 0.8rem;border-radius:999px;font-size:0.76rem;font-weight:600;background:rgba(139,92,246,0.1);color:#7c3aed;border:1.5px solid rgba(139,92,246,0.28);transition:background 0.2s;}
+.research-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.8rem 0 1.4rem;}
+.rtag{display:inline-block;padding:0.28rem 0.95rem;border-radius:999px;font-size:0.82rem;font-weight:600;background:rgba(139,92,246,0.1);color:#7c3aed;border:1.5px solid rgba(139,92,246,0.28);transition:background 0.2s;}
 .rtag:hover{background:rgba(139,92,246,0.2);}
-.tl-social-row{display:flex;gap:0.85rem;margin-bottom:0.5rem;}
-.tl-social-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,0.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.82);font-size:1.2rem;text-decoration:none !important;transition:transform 0.2s,background 0.2s,box-shadow 0.2s;box-shadow:0 2px 10px rgba(0,0,0,0.07);color:#3d3d3d !important;}
-.tl-social-icon:hover{transform:translateY(-4px) scale(1.1);background:rgba(255,255,255,0.92) !important;box-shadow:0 6px 22px rgba(0,0,0,0.12);text-decoration:none !important;}
+.tl-social-row{display:flex;flex-wrap:wrap;gap:0.85rem;margin-top:1rem;}
+.tl-social-icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.82);font-size:1.3rem;text-decoration:none !important;transition:transform 0.2s,background 0.2s,box-shadow 0.2s;box-shadow:0 2px 10px rgba(0,0,0,0.07);color:#3d3d3d !important;}
+.tl-social-icon:hover{transform:translateY(-4px) scale(1.1);background:rgba(255,255,255,0.92) !important;box-shadow:0 6px 22px rgba(0,0,0,0.12);}
 .tl-social-icon.sch{color:#4285f4 !important;}.tl-social-icon.li{color:#0a66c2 !important;}.tl-social-icon.gh{color:#24292f !important;}.tl-social-icon.em{color:#e05b4b !important;}
-.afp-section{scroll-margin-top:130px;padding-top:0.25rem;margin-bottom:3.5rem;}
-.section-label{font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.14em;color:rgba(50,30,15,0.48) !important;margin-bottom:1.5rem;}
+
+/* ---- Sections ---- */
+.afp-section{scroll-margin-top:130px;padding-top:0.5rem;margin-bottom:4rem;}
+.section-label{font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.14em;color:rgba(50,30,15,0.48) !important;margin-bottom:1.8rem;}
+.section-divider{display:flex;align-items:center;gap:0.85rem;margin:0 0 2rem;}
+.section-divider-line{flex:1;height:1.5px;background:rgba(255,255,255,0.55);}
+.section-divider-title{display:flex;align-items:center;gap:0.6rem;}
+.section-divider-title h2{font-size:1.3rem !important;font-weight:700 !important;margin:0 !important;color:#1c1c1e !important;}
+.sec-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.82rem;color:#fff;}
+
+/* ---- Cards ---- */
+.cat-cards{display:grid;grid-template-columns:1fr;gap:1.2rem;}
+@media(min-width:640px){.cat-cards{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:960px){.cat-cards{grid-template-columns:repeat(3,1fr);}}
+.cat-card{background:rgba(255,255,255,0.52);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.76);box-shadow:0 4px 20px rgba(0,0,0,0.06);border-radius:16px;padding:1.3rem 1.4rem;transition:transform 0.2s,background 0.2s,box-shadow 0.2s;}
+.cat-card:hover{background:rgba(255,255,255,0.78);box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-3px);}
+.cat-card-title{font-size:1rem;font-weight:700;color:#1c1c1e;margin-bottom:0.2rem;}
+.cat-card-when{font-size:0.82rem;font-weight:600;margin-bottom:0.55rem;}
+.cat-card-desc{font-size:0.93rem;line-height:1.65;color:rgba(40,40,40,0.78);margin:0;}
+.cat-card-desc a{color:#7c3aed !important;}
+
+/* ---- Timeline ---- */
 .htl-track::after{background:rgba(255,255,255,0.4) !important;}
 .htl-main-btn .htl-dot{background:#8b5cf6;box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 5px #8b5cf6;}
 .htl-main-btn:hover .htl-dot,.htl-main-btn.active .htl-dot{box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 5px #8b5cf6,0 0 16px rgba(139,92,246,0.5);}
 .htl-dot--current{background:#8b5cf6 !important;animation:htl-pulse 2.8s ease-in-out infinite;}
 @keyframes htl-pulse{0%,100%{box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 5px #8b5cf6;}50%{box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 7px #8b5cf6,0 0 20px rgba(139,92,246,0.4);}}
-.htl-meta .htl-years{color:#8b5cf6 !important;}.htl-meta .htl-name{color:#1c1c1e !important;}.htl-meta .htl-org{color:rgba(40,40,40,0.62) !important;}
+.htl-meta .htl-years{color:#8b5cf6 !important;font-size:0.82rem !important;}.htl-meta .htl-name{color:#1c1c1e !important;font-size:0.95rem !important;}.htl-meta .htl-org{color:rgba(40,40,40,0.65) !important;font-size:0.82rem !important;}
 .htl-sub-btn{background:rgba(255,255,255,0.48) !important;border:1px dashed rgba(255,255,255,0.72) !important;}
 .htl-sub-btn:hover,.htl-sub-btn.active{background:rgba(255,255,255,0.82) !important;border-color:rgba(139,92,246,0.5) !important;}
-.htl-sub-text{color:rgba(40,40,40,0.78) !important;}.htl-sub-text b{color:#7c3aed !important;}
-.htl-panel{background:rgba(255,255,255,0.58) !important;backdrop-filter:blur(18px) !important;-webkit-backdrop-filter:blur(18px) !important;border:1px solid rgba(255,255,255,0.8) !important;border-top:2.5px solid #8b5cf6 !important;border-radius:14px !important;padding:1.5rem !important;box-shadow:0 6px 28px rgba(0,0,0,0.07) !important;}
+.htl-sub-text{color:rgba(40,40,40,0.82) !important;font-size:0.82rem !important;}.htl-sub-text b{color:#7c3aed !important;}
+.htl-panel{background:rgba(255,255,255,0.58) !important;backdrop-filter:blur(18px) !important;-webkit-backdrop-filter:blur(18px) !important;border:1px solid rgba(255,255,255,0.8) !important;border-top:2.5px solid #8b5cf6 !important;border-radius:14px !important;padding:1.8rem !important;box-shadow:0 6px 28px rgba(0,0,0,0.07) !important;}
 .htl-panel.is-hidden{display:none;}.htl-panel.is-visible{display:block;animation:htl-fadein 0.28s ease both;}
 @keyframes htl-fadein{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
-.htl-panel-header h3{color:#1c1c1e !important;font-size:1rem;}.htl-panel-header p{color:rgba(40,40,40,0.7) !important;}
-.htl-ph-meta{color:#8b5cf6 !important;}.htl-panel-close{color:rgba(50,50,50,0.45) !important;}.htl-panel-close:hover{color:#1c1c1e !important;}
+.htl-panel-header h3{color:#1c1c1e !important;font-size:1.1rem !important;}.htl-panel-header p{color:rgba(40,40,40,0.72) !important;font-size:0.95rem !important;}
+.htl-ph-meta{color:#8b5cf6 !important;font-size:0.85rem !important;}.htl-panel-close{color:rgba(50,50,50,0.45) !important;}.htl-panel-close:hover{color:#1c1c1e !important;}
 .photo-slot{background:rgba(255,255,255,0.35) !important;border:1px dashed rgba(255,255,255,0.62) !important;}
-.section-divider{display:flex;align-items:center;gap:0.75rem;margin:0 0 1.6rem;}
-.section-divider-line{flex:1;height:1.5px;background:rgba(255,255,255,0.5);}
-.section-divider-title{display:flex;align-items:center;gap:0.55rem;}
-.section-divider-title h2{font-size:1.1rem !important;font-weight:700 !important;margin:0 !important;color:#1c1c1e !important;}
-.sec-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.76rem;color:#fff;}
-.cat-card{background:rgba(255,255,255,0.52) !important;backdrop-filter:blur(16px) !important;-webkit-backdrop-filter:blur(16px) !important;border:1px solid rgba(255,255,255,0.76) !important;box-shadow:0 4px 20px rgba(0,0,0,0.06) !important;border-radius:14px !important;}
-.cat-card:hover{background:rgba(255,255,255,0.78) !important;box-shadow:0 8px 32px rgba(0,0,0,0.1) !important;transform:translateY(-3px) !important;}
-.cat-card .cat-card-title{color:#1c1c1e !important;}.cat-card .cat-card-desc{color:rgba(40,40,40,0.74) !important;}.cat-card .cat-card-desc a{color:#7c3aed !important;}
-@media(min-width:960px){.cat-cards{grid-template-columns:repeat(3,1fr) !important;}}
+
+/* ---- Publications ---- */
 .pub-section-wrapper .publications ol.bibliography{padding-left:0 !important;}
-.pub-section-wrapper .publications li{background:rgba(255,255,255,0.48) !important;backdrop-filter:blur(12px) !important;-webkit-backdrop-filter:blur(12px) !important;border:1px solid rgba(255,255,255,0.72) !important;border-radius:10px;padding:1rem 1.2rem !important;margin-bottom:0.75rem !important;}
+.pub-section-wrapper .publications li{background:rgba(255,255,255,0.48) !important;backdrop-filter:blur(12px) !important;-webkit-backdrop-filter:blur(12px) !important;border:1px solid rgba(255,255,255,0.72) !important;border-radius:12px;padding:1.2rem 1.4rem !important;margin-bottom:1rem !important;font-size:0.97rem !important;}
 .pub-section-wrapper .publications li:hover{background:rgba(255,255,255,0.72) !important;}
+
+/* ---- Footer ---- */
 footer.fixed-bottom{background:rgba(255,255,255,0.56) !important;backdrop-filter:blur(10px) !important;-webkit-backdrop-filter:blur(10px) !important;border-top:1px solid rgba(255,255,255,0.45) !important;}
 footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d3d !important;}
-@media(max-width:600px){.abt-hero{flex-direction:column;align-items:center;}.tl-social-row{justify-content:center;}.abv-nav{top:56px;}}
+
+/* ---- Mobile ---- */
+@media(max-width:640px){
+  .abt-hero{flex-direction:column;align-items:center;text-align:center;gap:1.2rem;}
+  .abt-photo{width:130px;height:130px;}
+  .abt-intro-block h1.abt-name{font-size:1.9rem;}
+  .tl-social-row{justify-content:center;}
+  .abv-nav{top:56px;border-radius:12px;padding:0.5rem 0.7rem;}
+  .abv-nav-link{font-size:0.78rem;padding:0.28rem 0.7rem;}
+  .section-divider-title h2{font-size:1.1rem !important;}
+}
 </style>
 
 <div class="about-full-page">
 
-<!-- In-page section navigation -->
+<!-- In-page section navigation (no "About" here — site navbar already has it) -->
 <nav class="abv-nav" id="abv-nav" role="navigation" aria-label="Page sections">
   <a class="abv-nav-link active" href="#sec-about">About</a>
   <a class="abv-nav-link" href="#sec-affiliations">Affiliations</a>
@@ -84,25 +113,24 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
     <img class="abt-photo" src="/assets/img/prof_pic.jpg" alt="Smriti Joshi">
     <div class="abt-intro-block">
       <h1 class="abt-name">Smriti Joshi</h1>
-      <div class="about-intro">PhD Researcher &middot; Trustworthy AI in HealthCare</div>
+      <div class="about-intro">PhD Researcher &middot; Trustworthy AI in Healthcare</div>
       <div class="tl-social-row">
-    <a class="tl-social-icon sch" href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-    <a class="tl-social-icon li" href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a class="tl-social-icon gh" href="https://github.com/smriti-joshi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a class="tl-social-icon em" href="mailto:smriti.joshi@ub.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a class="tl-social-icon sch" href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a class="tl-social-icon li" href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a class="tl-social-icon gh" href="https://github.com/smriti-joshi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a class="tl-social-icon em" href="mailto:smriti.joshi@ub.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </div>
-
   <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <strong><a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
-</section>
-  <!-- <div class="research-tags">
+  <div class="research-tags">
     <span class="rtag">Uncertainty Estimation</span>
     <span class="rtag">Domain Adaptation</span>
     <span class="rtag">Breast MRI</span>
     <span class="rtag">Robust AI</span>
     <span class="rtag">EU Horizon</span>
-  </div> -->
-  
-
+  </div>
+</section>
 
 <!-- ============================================================
      AFFILIATIONS
@@ -111,6 +139,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
   <p class="section-label">Affiliations &amp; Education</p>
   <div class="htl-scroll-wrapper">
     <div class="htl-track">
+
       <div class="htl-node-group">
         <button class="htl-main-btn" data-gallery="bits" aria-label="BITS Pilani"><span class="htl-dot"></span></button>
         <div class="htl-meta">
@@ -123,6 +152,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
           <span class="htl-sub-text">XLIM Lab, France<br><b>Thesis Exchange</b></span>
         </button>
       </div>
+
       <div class="htl-node-group">
         <button class="htl-main-btn" data-gallery="erasmus" aria-label="Erasmus Mundus MSc"><span class="htl-dot"></span></button>
         <div class="htl-meta">
@@ -135,6 +165,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
           <span class="htl-sub-text">Harvard VCG, USA<br><b>MSc Thesis</b></span>
         </button>
       </div>
+
       <div class="htl-node-group">
         <button class="htl-main-btn" data-gallery="bcn" aria-label="BCN-AIM PhD"><span class="htl-dot htl-dot--current"></span></button>
         <div class="htl-meta">
@@ -143,6 +174,7 @@ footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d
           <span class="htl-org">BCN-AIM &middot; Universitat de Barcelona</span>
         </div>
       </div>
+
     </div>
   </div>
   <div class="htl-panel is-hidden" id="htl-panel">
