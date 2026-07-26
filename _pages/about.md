@@ -7,325 +7,223 @@ nav_order: 1
 ---
 
 <style>
-body,html{background:linear-gradient(135deg,#ffe8d6 0%,#ffd9d3 25%,#f5d4bb 50%,#d9c8f5 75%,#e7f6fa 100%) fixed !important;background-attachment:fixed !important;}
-.container{max-width:1200px !important;padding-left:1.5rem !important;padding-right:1.5rem !important;}
-.post{background:transparent;}
 .post-header{display:none;}
-nav#navbar{background:rgba(255,255,255,0.62) !important;backdrop-filter:blur(14px) !important;-webkit-backdrop-filter:blur(14px) !important;border-bottom:1px solid rgba(255,255,255,0.35) !important;box-shadow:0 1px 14px rgba(0,0,0,0.07) !important;}
-nav#navbar .nav-link,nav#navbar .navbar-brand{color:#2d2d2d !important;}
 
-/* ---- In-page pill nav ---- */
-.abv-nav{position:sticky;top:62px;z-index:900;display:flex;justify-content:center;flex-wrap:wrap;gap:0.3rem;padding:0.5rem 1rem;background:rgba(255,255,255,0.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:999px;margin:0 auto 3rem;width:fit-content;max-width:100%;box-shadow:0 2px 16px rgba(0,0,0,0.08);border:1px solid rgba(255,255,255,0.72);}
-.abv-nav-link{padding:0.32rem 1rem;border-radius:999px;font-size:0.85rem;font-weight:600;color:rgba(30,20,10,0.58) !important;text-decoration:none !important;transition:background 0.18s,color 0.18s;white-space:nowrap;}
-.abv-nav-link:hover,.abv-nav-link.active{background:rgba(139,92,246,0.15);color:#7c3aed !important;text-decoration:none !important;}
+.about-header{display:flex;gap:1.75rem;align-items:center;margin-bottom:2rem;}
+.about-photo{width:128px;height:128px;border-radius:12px;object-fit:cover;flex-shrink:0;}
+.about-header-text h1{margin:0 0 .2rem;font-size:2rem;font-weight:700;}
+.about-tagline{margin:0 0 .35rem;font-size:1.05rem;font-weight:600;color:var(--global-theme-color);}
+.about-affil{margin:0 0 .8rem;font-size:.95rem;color:var(--global-text-color-light);}
+.about-affil a{color:inherit;text-decoration:underline;}
+.about-social{display:flex;flex-wrap:wrap;gap:1.1rem;}
+.about-social a{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--global-text-color-light);text-decoration:none;}
+.about-social a:hover{color:var(--global-theme-color);}
 
-/* ---- About hero ---- */
-.abt-hero{display:flex;align-items:flex-start;gap:2.4rem;margin-bottom:2rem;}
-.abt-photo{width:160px;height:160px;border-radius:16px;object-fit:cover;flex-shrink:0;border:3px solid rgba(255,255,255,0.88);box-shadow:0 8px 32px rgba(0,0,0,0.18);}
-.abt-intro-block{flex:1;}
-.abt-intro-block h1.abt-name{font-size:2.4rem;font-weight:800;color:#1c1c1e;margin-bottom:0.2rem;margin-top:0;line-height:1.15;}
-.about-intro{font-size:1.15rem;font-weight:600;color:rgba(60,30,5,0.72);margin-bottom:0;}
-.abt-bio{font-size:1.05rem;line-height:1.78;color:rgba(28,18,8,0.82);margin-bottom:0.7rem;}
-.abt-bio a{color:#7c3aed !important;}.abt-bio strong,.abt-bio b{color:#1c1c1e;}
-.tl-social-row{display:flex;flex-wrap:wrap;gap:0.85rem;margin-top:1rem;}
-.tl-social-icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.82);font-size:1.5rem;text-decoration:none !important;transition:transform 0.2s,background 0.2s,box-shadow 0.2s;box-shadow:0 2px 10px rgba(0,0,0,0.07);}
-.tl-social-icon i{color:inherit;display:inline-block;}
-.tl-social-icon:hover{transform:translateY(-4px) scale(1.1);background:rgba(255,255,255,0.92) !important;box-shadow:0 6px 22px rgba(0,0,0,0.12);}
-.tl-social-icon.sch i{color:#4285f4 !important;}.tl-social-icon.li i{color:#0a66c2 !important;}.tl-social-icon.gh i{color:#24292f !important;}.tl-social-icon.em i{color:#e05b4b !important;}
+.about-bio{font-size:1rem;line-height:1.7;margin-bottom:2.75rem;}
 
-/* ---- Sections ---- */
-.afp-section{scroll-margin-top:130px;padding-top:0.5rem;margin-bottom:4rem;}
-.section-label{font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.14em;color:rgba(50,30,15,0.48) !important;margin-bottom:1.8rem;}
-.section-divider{display:flex;align-items:center;gap:0.85rem;margin:0 0 2rem;}
-.section-divider-line{flex:1;height:1.5px;background:rgba(255,255,255,0.55);}
-.section-divider-title{display:flex;align-items:center;gap:0.6rem;}
-.section-divider-title h2{font-size:1.3rem !important;font-weight:700 !important;margin:0 !important;color:#1c1c1e !important;}
-.sec-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.82rem;color:#fff;}
+.about-page section{margin-bottom:2.75rem;}
+.about-page section:last-child{margin-bottom:0;}
+.about-page h2{font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding-bottom:.5rem;margin-bottom:1.4rem;border-bottom:1px solid var(--global-divider-color);}
 
-/* ---- Cards ---- */
-.cat-cards{display:grid;grid-template-columns:1fr;gap:1.2rem;}
-@media(min-width:640px){.cat-cards{grid-template-columns:repeat(2,1fr);}}
-@media(min-width:960px){.cat-cards{grid-template-columns:repeat(3,1fr);}}
-.cat-card{background:rgba(255,255,255,0.52);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.76);box-shadow:0 4px 20px rgba(0,0,0,0.06);border-radius:16px;padding:1.3rem 1.4rem;transition:transform 0.2s,background 0.2s,box-shadow 0.2s;}
-.cat-card:hover{background:rgba(255,255,255,0.78);box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-3px);}
-.cat-card-title{font-size:1rem;font-weight:700;color:#1c1c1e;margin-bottom:0.2rem;}
-.cat-card-when{font-size:0.82rem;font-weight:600;margin-bottom:0.55rem;}
-.cat-card-desc{font-size:0.93rem;line-height:1.65;color:rgba(40,40,40,0.78);margin:0;}
-.cat-card-desc a{color:#7c3aed !important;}
+.role{margin-bottom:1.6rem;}
+.role:last-child{margin-bottom:0;}
+.role-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;}
+.role-title{font-weight:700;font-size:1rem;}
+.role-date{font-weight:600;font-size:.85rem;color:var(--global-theme-color);white-space:nowrap;}
+.role-org{font-style:italic;font-size:.9rem;color:var(--global-text-color-light);margin:.15rem 0 .6rem;}
+.role ul{margin:0;padding-left:1.15rem;}
+.role li{margin-bottom:.35rem;font-size:.95rem;line-height:1.55;}
 
-/* ---- Timeline ---- */
-.htl-track::after{background:rgba(255,255,255,0.4) !important;}
-.htl-main-btn .htl-dot{background:#8b5cf6;box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 5px #8b5cf6;}
-.htl-main-btn:hover .htl-dot,.htl-main-btn.active .htl-dot{box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 5px #8b5cf6,0 0 16px rgba(139,92,246,0.5);}
-.htl-dot--current{background:#8b5cf6 !important;animation:htl-pulse 2.8s ease-in-out infinite;}
-@keyframes htl-pulse{0%,100%{box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 5px #8b5cf6;}50%{box-shadow:0 0 0 3px rgba(255,255,255,0.7),0 0 0 7px #8b5cf6,0 0 20px rgba(139,92,246,0.4);}}
-.htl-meta .htl-years{color:#8b5cf6 !important;font-size:0.82rem !important;}.htl-meta .htl-name{color:#1c1c1e !important;font-size:0.95rem !important;}.htl-meta .htl-org{color:rgba(40,40,40,0.65) !important;font-size:0.82rem !important;}
-.htl-sub-btn{background:rgba(255,255,255,0.48) !important;border:1px dashed rgba(255,255,255,0.72) !important;}
-.htl-sub-btn:hover,.htl-sub-btn.active{background:rgba(255,255,255,0.82) !important;border-color:rgba(139,92,246,0.5) !important;}
-.htl-sub-text{color:rgba(40,40,40,0.82) !important;font-size:0.82rem !important;}.htl-sub-text b{color:#7c3aed !important;}
-.htl-panel{background:rgba(255,255,255,0.58) !important;backdrop-filter:blur(18px) !important;-webkit-backdrop-filter:blur(18px) !important;border:1px solid rgba(255,255,255,0.8) !important;border-top:2.5px solid #8b5cf6 !important;border-radius:14px !important;padding:1.8rem !important;box-shadow:0 6px 28px rgba(0,0,0,0.07) !important;}
-.htl-panel.is-hidden{display:none;}.htl-panel.is-visible{display:block;animation:htl-fadein 0.28s ease both;}
-@keyframes htl-fadein{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
-.htl-panel-header h3{color:#1c1c1e !important;font-size:1.1rem !important;}.htl-panel-header p{color:rgba(40,40,40,0.72) !important;font-size:0.95rem !important;}
-.htl-ph-meta{color:#8b5cf6 !important;font-size:0.85rem !important;}.htl-panel-close{color:rgba(50,50,50,0.45) !important;}.htl-panel-close:hover{color:#1c1c1e !important;}
-.photo-slot{background:rgba(255,255,255,0.35) !important;border:1px dashed rgba(255,255,255,0.62) !important;}
+.edu-item{margin-bottom:1.3rem;}
+.edu-item:last-child{margin-bottom:0;}
+.edu-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;}
+.edu-title{font-weight:700;font-size:1rem;}
+.edu-date{font-weight:600;font-size:.85rem;color:var(--global-theme-color);white-space:nowrap;}
+.edu-org{font-style:italic;font-size:.9rem;color:var(--global-text-color-light);margin:.15rem 0 0;}
+.edu-note{font-size:.88rem;color:var(--global-text-color-light);margin:.3rem 0 0;}
 
-/* ---- Publications ---- */
-.pub-section-wrapper .publications ol.bibliography{padding-left:0 !important;}
-.pub-section-wrapper .publications li{background:rgba(255,255,255,0.48) !important;backdrop-filter:blur(12px) !important;-webkit-backdrop-filter:blur(12px) !important;border:1px solid rgba(255,255,255,0.72) !important;border-radius:12px;padding:1.2rem 1.4rem !important;margin-bottom:1rem !important;font-size:0.97rem !important;}
-.pub-section-wrapper .publications li:hover{background:rgba(255,255,255,0.72) !important;}
+.skills p{font-size:.95rem;line-height:1.65;margin-bottom:.6rem;}
+.skills p:last-child{margin-bottom:0;}
 
-/* ---- Footer ---- */
-footer.fixed-bottom{background:rgba(255,255,255,0.56) !important;backdrop-filter:blur(10px) !important;-webkit-backdrop-filter:blur(10px) !important;border-top:1px solid rgba(255,255,255,0.45) !important;}
-footer.fixed-bottom p,footer.fixed-bottom a,footer.fixed-bottom span{color:#3d3d3d !important;}
+.about-page ul.plain{padding-left:1.15rem;margin:0;}
+.about-page ul.plain li{font-size:.95rem;line-height:1.6;margin-bottom:.45rem;}
 
+.see-all{margin-top:1.1rem;font-size:.9rem;}
+.see-all a{color:var(--global-theme-color);font-weight:600;text-decoration:none;}
+.see-all a:hover{text-decoration:underline;}
 
+.languages-line{font-size:.95rem;}
 
-/* ---- Mobile ---- */
-@media(max-width:640px){
-  .abt-hero{flex-direction:column;align-items:center;text-align:center;gap:1.2rem;}
-  .abt-photo{width:130px;height:130px;}
-  .abt-intro-block h1.abt-name{font-size:1.9rem;}
-  .tl-social-row{justify-content:center;}
-  .abv-nav{top:56px;border-radius:12px;padding:0.5rem 0.7rem;}
-  .abv-nav-link{font-size:0.78rem;padding:0.28rem 0.7rem;}
-  .section-divider-title h2{font-size:1.1rem !important;}
+@media(max-width:576px){
+  .about-header{flex-direction:column;align-items:flex-start;}
+  .about-photo{width:100px;height:100px;}
 }
 </style>
 
-<div class="about-full-page">
+<div class="about-page">
 
-<!-- In-page section navigation (no "About" here — site navbar already has it) -->
-<nav class="abv-nav" id="abv-nav" role="navigation" aria-label="Page sections">
-  <a class="abv-nav-link active" href="#sec-about">About</a>
-  <a class="abv-nav-link" href="#sec-challenges">Challenges</a>
-  <a class="abv-nav-link" href="#sec-impact">Impact</a>
-  <a class="abv-nav-link" href="#sec-publications">Publications</a>
-</nav>
-
-<!-- ============================================================
-     ABOUT
-     ============================================================ -->
-<section class="afp-section" id="sec-about" aria-label="About">
-  <div class="abt-hero">
-    <img class="abt-photo" src="/assets/img/smriti.png" alt="Smriti Joshi">
-    <div class="abt-intro-block">
-      <h1 class="abt-name">Smriti Joshi</h1>
-      <div class="about-intro">PhD Researcher &middot; Trustworthy AI in Healthcare</div>
-      <div class="tl-social-row">
-        <a class="tl-social-icon sch" href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        <a class="tl-social-icon li" href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a class="tl-social-icon gh" href="https://github.com/smriti-joshi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a class="tl-social-icon em" href="mailto:smriti.joshi@ub.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      </div>
+<div class="about-header">
+  <img class="about-photo" src="/assets/img/smriti.png" alt="Smriti Joshi">
+  <div class="about-header-text">
+    <h1>Smriti Joshi</h1>
+    <p class="about-tagline">ML Researcher &middot; Trustworthy AI in Healthcare</p>
+    <p class="about-affil">PhD Researcher at <a href="https://www.bcn-aim.org/" target="_blank" rel="noopener">BCN-AIM</a>, Universitat de Barcelona</p>
+    <div class="about-social">
+      <a href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+      <a href="https://www.linkedin.com/in/smriti1610/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/smriti-joshi" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:smriti.joshi@ub.edu"><i class="fas fa-envelope"></i> Email</a>
     </div>
   </div>
-  <p class="abt-bio">I am a PhD Researcher at <a href="https://www.bcn-aim.org/"><strong>BCN-AIM</strong></a>, Universitat de Barcelona, funded by the Horizon Europe Project <strong><a href="https://radioval.eu/">RadioVal</a></strong>. My work focuses on building models and engaging community for advancing Health AI.</p>
+</div>
 
+<p class="about-bio">
+I'm a PhD Researcher at <a href="https://www.bcn-aim.org/" target="_blank" rel="noopener">BCN-AIM</a>, Universitat de Barcelona, funded by the Horizon Europe project <a href="https://radioval.eu/" target="_blank" rel="noopener">RadioVal</a>. Over 4+ years I've built and validated deep learning systems for medical imaging &mdash; creating community benchmarks and collaborating closely with hospitals across multiple continents. My work centers on models that generalize across multi-center clinical data, with hands-on expertise in domain adaptation, uncertainty estimation, and generative imaging.
+</p>
 
-  <p class="section-label">Affiliations &amp; Education</p>
-  <div class="htl-scroll-wrapper">
-    <div class="htl-track">
+<section id="experience">
+  <h2>Experience</h2>
 
-      <div class="htl-node-group">
-        <button class="htl-main-btn" data-gallery="bits" aria-label="BITS Pilani"><span class="htl-dot"></span></button>
-        <div class="htl-meta">
-          <span class="htl-years">2014 &ndash; 2018</span>
-          <span class="htl-name">MSc Physics</span>
-          <span class="htl-org">BITS Pilani, India</span>
-        </div>
-        <button class="htl-sub-btn" data-gallery="xlim" aria-label="XLIM Lab thesis">
-          <span class="htl-sub-dot"></span>
-          <span class="htl-sub-text">XLIM Lab, France<br><b>Thesis Exchange</b></span>
-        </button>
-      </div>
-
-      <div class="htl-node-group">
-        <button class="htl-main-btn" data-gallery="erasmus" aria-label="Erasmus Mundus MSc"><span class="htl-dot"></span></button>
-        <div class="htl-meta">
-          <span class="htl-years">2019 &ndash; 2021</span>
-          <span class="htl-name">MSc IPCV (Honors)</span>
-          <span class="htl-org">Erasmus Mundus</span>
-        </div>
-        <button class="htl-sub-btn" data-gallery="harvard" aria-label="Harvard VCG thesis">
-          <span class="htl-sub-dot"></span>
-          <span class="htl-sub-text">Harvard VCG, USA<br><b>MSc Thesis</b></span>
-        </button>
-      </div>
-
-      <div class="htl-node-group">
-        <button class="htl-main-btn" data-gallery="bcn" aria-label="BCN-AIM PhD"><span class="htl-dot htl-dot--current"></span></button>
-        <div class="htl-meta">
-          <span class="htl-years">2021 &ndash; Present</span>
-          <span class="htl-name">PhD Candidate</span>
-          <span class="htl-org">BCN-AIM &middot; Universitat de Barcelona</span>
-        </div>
-      </div>
-
+  <div class="role">
+    <div class="role-head">
+      <span class="role-title">PhD Researcher</span>
+      <span class="role-date">2021 &ndash; Present</span>
     </div>
+    <p class="role-org">BCN-AIM Laboratory, Universitat de Barcelona &middot; Barcelona, Spain</p>
+    <ul>
+      <li>Research trustworthy and adaptive AI for medical imaging &mdash; understanding and improving model behavior under domain shift &mdash; within the EU Horizon Europe project <a href="https://radioval.eu/" target="_blank" rel="noopener">RadioVal</a>, validated across 8+ hospitals.</li>
+      <li>Co-leading the <a href="https://www.ub.edu/mama-synth/mama-synth" target="_blank" rel="noopener">MAMA-SYNTH Challenge</a> (MICCAI 2026) for synthesis of virtual contrast-enhanced breast MRI.</li>
+      <li>Co-organized the <a href="https://www.ub.edu/mama-mia/" target="_blank" rel="noopener">MAMA-MIA Challenge</a> (MICCAI 2025) for generalizable and fair tumor segmentation and treatment response prediction in breast MRI.</li>
+      <li>Achieved a Top-2 solution in the <a href="https://odelia2025.grand-challenge.org/" target="_blank" rel="noopener">ODELIA Challenge</a> (MICCAI 2025) for breast cancer classification.</li>
+      <li>Contributed to trustworthy AI research including the <a href="https://future-ai.eu/" target="_blank" rel="noopener">FUTURE-AI</a> framework.</li>
+    </ul>
   </div>
-  <div class="htl-panel is-hidden" id="htl-panel">
-    <div class="htl-panel-inner">
-      <button class="htl-panel-close" id="htl-panel-close" aria-label="Close panel">&times;</button>
-      <div class="htl-panel-header" id="htl-panel-header"></div>
-      <div class="htl-photo-grid" id="htl-photo-grid"></div>
+
+  <div class="role">
+    <div class="role-head">
+      <span class="role-title">Research Fellow</span>
+      <span class="role-date">Feb 2021 &ndash; Jul 2021</span>
     </div>
+    <p class="role-org">VCG, SEAS, Harvard University &middot; U.S.A. (Remote)</p>
+    <ul>
+      <li>Developed a self-supervised domain adaptation method for a large-scale connectomics dataset.</li>
+    </ul>
   </div>
 </section>
 
-<!-- ============================================================
-     CHALLENGES
-     ============================================================ -->
-<section class="afp-section" id="sec-challenges" aria-label="Challenges">
-  <div class="section-divider">
-    <div class="section-divider-line"></div>
-    <div class="section-divider-title">
-      <span class="sec-icon" style="background:#c0392b"><i class="fas fa-bolt"></i></span>
-      <h2>Challenges</h2>
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="edu-item">
+    <div class="edu-head">
+      <span class="edu-title">PhD, Mathematics and Computer Science</span>
+      <span class="edu-date">2022 &ndash; Present</span>
     </div>
-    <div class="section-divider-line"></div>
+    <p class="edu-org">Artificial Intelligence in Medicine Lab (BCN-AIM), Universitat de Barcelona &middot; Spain</p>
+    <p class="edu-note">Summer School: International Computer Vision Summer School, 2025</p>
   </div>
-  <div class="cat-cards">
-    <div class="cat-card">
-      <div class="cat-card-title">MAMA-MIA Challenge &mdash; Co-organizer</div>
-      <div class="cat-card-when" style="color:#c0392b">MICCAI 2025</div>
-      <p class="cat-card-desc">Designed and ran an open challenge on generalizable and fair tumor segmentation and pCR prediction using breast MRI. <a href="https://mama-mia.grand-challenge.org/" target="_blank" rel="noopener">Challenge page &rarr;</a></p>
+
+  <div class="edu-item">
+    <div class="edu-head">
+      <span class="edu-title">MSc, Image Processing and Computer Vision (Honors)</span>
+      <span class="edu-date">2019 &ndash; 2021</span>
     </div>
-    <div class="cat-card">
-      <div class="cat-card-title">ODELIA Challenge &mdash; Top-2 Solution</div>
-      <div class="cat-card-when" style="color:#c0392b">MICCAI 2025</div>
-      <p class="cat-card-desc">Placed Top-2 in the <a href="https://odelia-ai.eu/" target="_blank" rel="noopener">ODELIA</a> multi-center breast MRI challenge, demonstrating strong cross-site generalizability of our domain-adaptive approach.</p>
+    <p class="edu-org">Erasmus Mundus &middot; University of Bordeaux, Autonomous University of Madrid, P&aacute;zm&aacute;ny P&eacute;ter Catholic University &middot; France, Spain, Hungary</p>
+    <p class="edu-note">MSc thesis at VCG, SEAS, Harvard University (remote)</p>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-head">
+      <span class="edu-title">Integrated MSc, Physics</span>
+      <span class="edu-date">2014 &ndash; 2018</span>
     </div>
+    <p class="edu-org">Birla Institute of Technology and Science, Pilani &middot; India</p>
+    <p class="edu-note">Thesis exchange at XLIM Research Institute, France</p>
   </div>
 </section>
 
-<!-- ============================================================
-     LEADERSHIP
-     ============================================================ -->
-<section class="afp-section" id="sec-leadership" aria-label="Leadership">
-  <div class="section-divider">
-    <div class="section-divider-line"></div>
-    <div class="section-divider-title">
-      <span class="sec-icon" style="background:#0f766e"><i class="fas fa-users"></i></span>
-      <h2>Leadership</h2>
-    </div>
-    <div class="section-divider-line"></div>
-  </div>
-  <div class="cat-cards">
-    <div class="cat-card">
-      <div class="cat-card-title">AI Working Group Lead &mdash; RadioVal</div>
-      <div class="cat-card-when" style="color:#0f766e">2021 &ndash; Present</div>
-      <p class="cat-card-desc">Leading the AI research workstream in <a href="https://radioval.eu/" target="_blank" rel="noopener">RadioVal</a>, an EU Horizon Europe project on clinical validation of AI for breast cancer treatment response.</p>
-    </div>
-    <div class="cat-card">
-      <div class="cat-card-title">MICCAI 2024 LMIC Initiative &mdash; Committee Member</div>
-      <div class="cat-card-when" style="color:#0f766e">2024</div>
-      <p class="cat-card-desc">Served on the Grant Selection &amp; Sponsorship Committee for the <a href="https://conferences.miccai.org/2024/en/" target="_blank" rel="noopener">MICCAI 2024 LMIC Initiative</a>, leading selection of 50+ early-career researchers from lower-income countries.</p>
-    </div>
-    <div class="cat-card">
-      <div class="cat-card-title">International AI Schools &mdash; AFRICAI</div>
-      <div class="cat-card-when" style="color:#0f766e">2021 &ndash; Present</div>
-      <p class="cat-card-desc">Active member of <a href="https://africai.org/" target="_blank" rel="noopener">AFRICAI</a>. Coordinated international AI schools across Africa and South Asia, connecting researchers to global medical AI communities.</p>
-    </div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><strong>Modeling:</strong> Data curation &amp; harmonization, radiomics, diffusion models, GANs, flow matching, nnU-Net, transformers, domain adaptation, uncertainty estimation.</p>
+    <p><strong>Validation:</strong> Benchmarking, clinical validation, statistical testing &amp; experimental design, fairness &amp; robustness analysis.</p>
+    <p><strong>Tools:</strong> PyTorch, TensorFlow, Python, Docker, Git/GitHub.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     IMPACT
-     ============================================================ -->
-<section class="afp-section" id="sec-impact" aria-label="Impact">
-  <div class="section-divider">
-    <div class="section-divider-line"></div>
-    <div class="section-divider-title">
-      <span class="sec-icon" style="background:#7c3aed"><i class="fas fa-star"></i></span>
-      <h2>Impact</h2>
-    </div>
-    <div class="section-divider-line"></div>
-  </div>
-  <div class="cat-cards">
-    <div class="cat-card">
-      <div class="cat-card-title">Test-Time Adaptation for Breast MRI</div>
-      <div class="cat-card-when" style="color:#7c3aed">MICCAI 2025 &mdash; First Author</div>
-      <p class="cat-card-desc">Robust tumor segmentation under domain shift without retraining &mdash; addressing a core bottleneck for real-world deployment of clinical AI across diverse acquisition conditions.</p>
-    </div>
-    <div class="cat-card">
-      <div class="cat-card-title">Uncertainty Estimation for Robust AI</div>
-      <div class="cat-card-when" style="color:#7c3aed">SPIE 2024 &mdash; First Author</div>
-      <p class="cat-card-desc">Investigated well-calibrated uncertainty signals for flagging unreliable predictions in breast MRI segmentation &mdash; a key ingredient for building clinician trust in AI.</p>
-    </div>
-    <div class="cat-card">
-      <div class="cat-card-title">3 Co-authored Journal &amp; Book Publications</div>
-      <div class="cat-card-when" style="color:#7c3aed">2025</div>
-      <p class="cat-card-desc">JMI review on generative AI for imaging simulations, a Scientific Data paper on large-scale breast MRI datasets, and a book chapter on stakeholder perspectives in AI for healthcare.</p>
-    </div>
-    <div class="cat-card">
-      <div class="cat-card-title">medigan &mdash; Clinical AI Framework</div>
-      <div class="cat-card-when" style="color:#7c3aed">JMI 2023</div>
-      <p class="cat-card-desc">Co-authored <em>medigan</em>, an open-source framework for medical image synthesis adopted across multiple research groups for synthetic data generation and augmentation.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     PUBLICATIONS
-     ============================================================ -->
-<section class="afp-section pub-section-wrapper" id="sec-publications" aria-label="Publications">
-  <div class="section-divider">
-    <div class="section-divider-line"></div>
-    <div class="section-divider-title">
-      <span class="sec-icon" style="background:#1d4ed8"><i class="fas fa-book-open"></i></span>
-      <h2>Publications</h2>
-    </div>
-    <div class="section-divider-line"></div>
-  </div>
+<section id="publications">
+  <h2>Selected Publications</h2>
   <div class="publications">
-    {% bibliography -f {{ site.scholar.bibliography }} %}
+    {% assign selected_keys = "joshi2026dense,garrucho2025mamamia,joshi2025tta,joshi2024uncertainty,cabrita2025stakeholder,joshi2021nn" | split: "," | join: "|" %}
+    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ selected_keys }}]* %}
   </div>
+  <p class="see-all"><a href="/publications/">See the full list of publications &rarr;</a></p>
+</section>
+
+<section id="leadership">
+  <h2>Leadership &amp; Impact</h2>
+
+  <div class="role">
+    <div class="role-head">
+      <span class="role-title">Lead, AI Working Group</span>
+      <span class="role-date">2022 &ndash; 2023</span>
+    </div>
+    <p class="role-org"><a href="https://radioval.eu/" target="_blank" rel="noopener">European Union Horizon Europe Project &mdash; RadioVal</a></p>
+    <ul>
+      <li>Coordinated all AI-related work within the international consortium of 16 partners.</li>
+      <li>Facilitated interdisciplinary collaboration to ensure clinically-informed AI model development.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-head">
+      <span class="role-title">Lead, Grant Selection &amp; Sponsorship Committee</span>
+      <span class="role-date">2023 &ndash; 2024</span>
+    </div>
+    <p class="role-org"><a href="https://conferences.miccai.org/2024/en/" target="_blank" rel="noopener">MICCAI 2024 LMIC Initiative</a></p>
+    <ul>
+      <li>Led the selection process for 50+ early-career researchers from lower-to-middle income countries, supporting their attendance at MICCAI 2024.</li>
+      <li>Secured sponsorships and coordinated finances to maximize the impact of the programme.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-head">
+      <span class="role-title">Coordinator</span>
+      <span class="role-date">2022 &ndash; 2024</span>
+    </div>
+    <p class="role-org"><a href="https://africai.org/summer-school-2023/" target="_blank" rel="noopener">AFRICAI Summer School</a> &amp; <a href="https://www.anais.naamii.org.np/home" target="_blank" rel="noopener">Annual Nepal AI School</a></p>
+    <ul>
+      <li>Organized international AI schools, fostering research collaboration across Africa and South Asia.</li>
+      <li>Coordinated one-year mentorship programs for African researchers, supporting capacity-building and career development in medical AI.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-head">
+      <span class="role-title">Mentorship</span>
+    </div>
+    <ul>
+      <li>Master in Data Science 2025 @ Universitat de Barcelona &mdash; lecture on Domain Adaptation.</li>
+      <li>ESMPE 2023, AI in Medical Physics &mdash; lecture on Data Acquisition, Curation and Storage.</li>
+      <li>Mentor @ RISE-MICCAI Winter School 2022.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements &amp; Honors</h2>
+  <ul class="plain">
+    <li>Top-2 solution in the <a href="https://odelia2025.grand-challenge.org/" target="_blank" rel="noopener">ODELIA Challenge</a> @ MICCAI 2025.</li>
+    <li>Erasmus Mundus Master Scholarship (2019 &ndash; 2021).</li>
+    <li>Honors MSc in <a href="https://ipcv.eu/" target="_blank" rel="noopener">Image Processing and Computer Vision (IPCV)</a>.</li>
+    <li>Co-authored <em>medigan</em> (JMI 2023), an open-source framework for medical image synthesis adopted across multiple research groups.</li>
+  </ul>
+</section>
+
+<section id="languages">
+  <h2>Languages</h2>
+  <p class="languages-line">English (Proficient) &middot; Hindi (Native) &middot; Spanish (B1) &middot; French (A2) &middot; Hungarian (A1)</p>
 </section>
 
 </div>
-
-<script>
-(function(){
-  'use strict';
-  var GALLERY_DATA={
-    bits:{title:'MSc Physics &middot; BITS Pilani',meta:'2014 &ndash; 2018 &middot; Pilani, Rajasthan, India',desc:'Four years studying Physics at BITS Pilani, one of India\'s premier institutions. Built a strong foundation in classical mechanics, electrodynamics, statistical mechanics, and computational methods.',photos:[]},
-    xlim:{title:'Thesis Exchange &middot; XLIM Research Institute',meta:'During MSc &middot; Limoges, France',desc:'Conducted thesis research at the XLIM Research Institute (CNRS UMR 7252) in France &mdash; the first international research experience, at the intersection of applied physics and signal processing.',photos:[]},
-    erasmus:{title:'MSc Image Processing &amp; Computer Vision (Honors)',meta:'2019 &ndash; 2021 &middot; Erasmus Mundus Joint Master\'s',desc:'Prestigious Erasmus Mundus Joint Master\'s across three European universities: Autonomous University of Madrid (Spain), University of Bordeaux (France), and P\u00e1zm\u00e1ny P\u00e9ter Catholic University (Hungary). Graduated with Honors.',photos:[]},
-    harvard:{title:'MSc Thesis &middot; VCG SEAS, Harvard University',meta:'2021 &middot; Cambridge, Massachusetts, USA',desc:'Conducted MSc thesis research at the Visual Computing Group, SEAS, Harvard University. Focused on unsupervised domain adaptation for large-scale electron microscopy connectomics data.',photos:[]},
-    bcn:{title:'Research Associate &rarr; PhD Candidate &middot; BCN-AIM, UB',meta:'2021 &ndash; Present &middot; Barcelona, Spain',desc:'Joined BCN-AIM as a Research Associate in 2021 and became a PhD Candidate from May 2022. Research focuses on trustworthy and robust AI for medical imaging within the EU Horizon RadioVal project.',photos:[]}
-  };
-  var PLACEHOLDER_COUNT=3;
-  var panel=document.getElementById('htl-panel');
-  var panelHdr=document.getElementById('htl-panel-header');
-  var photoGrid=document.getElementById('htl-photo-grid');
-  var closeBtn=document.getElementById('htl-panel-close');
-  var mainBtns=document.querySelectorAll('.htl-main-btn');
-  var subBtns=document.querySelectorAll('.htl-sub-btn');
-  var currentId=null;
-  function buildGrid(photos){var h='';if(photos&&photos.length){photos.forEach(function(s){h+='<div class="photo-slot"><img src="/'+s+'" alt="" loading="lazy"></div>';});}else{for(var i=0;i<PLACEHOLDER_COUNT;i++){h+='<div class="photo-slot"><div class="photo-placeholder"><i class="fas fa-image"></i><span>Add a photo</span></div></div>';}}return h;}
-  function showPanel(id){var d=GALLERY_DATA[id];if(!d)return;currentId=id;panelHdr.innerHTML='<h3>'+d.title+'</h3><div class="htl-ph-meta">'+d.meta+'</div><p>'+d.desc+'</p>';photoGrid.innerHTML=buildGrid(d.photos);panel.classList.remove('is-visible');panel.classList.add('is-hidden');requestAnimationFrame(function(){requestAnimationFrame(function(){panel.classList.remove('is-hidden');panel.classList.add('is-visible');panel.scrollIntoView({behavior:'smooth',block:'nearest'});});});}
-  function hidePanel(){panel.classList.remove('is-visible');panel.classList.add('is-hidden');clearActive();currentId=null;}
-  function clearActive(){mainBtns.forEach(function(b){b.classList.remove('active');});subBtns.forEach(function(b){b.classList.remove('active');});}
-  function handleClick(btn){var id=btn.getAttribute('data-gallery');if(currentId===id){hidePanel();return;}clearActive();btn.classList.add('active');showPanel(id);}
-  mainBtns.forEach(function(btn){btn.addEventListener('click',function(){handleClick(btn);});});
-  subBtns.forEach(function(btn){btn.addEventListener('click',function(){handleClick(btn);});});
-  closeBtn.addEventListener('click',hidePanel);
-
-  /* Scroll spy for in-page nav */
-  var navLinks=document.querySelectorAll('.abv-nav-link');
-  var sections=document.querySelectorAll('.afp-section');
-  function onScroll(){
-    var scrollY=window.pageYOffset;
-    var activeId='sec-about';
-    sections.forEach(function(sec){
-      if(scrollY>=(sec.offsetTop-140)){activeId=sec.id;}
-    });
-    navLinks.forEach(function(link){
-      link.classList.toggle('active',link.getAttribute('href')==='#'+activeId);
-    });
-  }
-  window.addEventListener('scroll',onScroll,{passive:true});
-  onScroll();
-}());
-</script>
