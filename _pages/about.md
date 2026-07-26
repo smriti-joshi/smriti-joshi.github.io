@@ -46,7 +46,7 @@ nav: false
     <div class="about-social">
       <a href="https://scholar.google.com/citations?user=17124487720810434582" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Google Scholar</a>
       <a href="https://orcid.org/0000-0001-8480-023X" target="_blank" rel="noopener"><i class="ai ai-orcid"></i> ORCID</a>
-      <a href="https://www.linkedin.com/in/smriti1610/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.linkedin.com/in/joshi-smriti/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://github.com/smriti-joshi" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
       <a href="mailto:smriti.joshi@ub.edu"><i class="fas fa-envelope"></i> Email</a>
       <a href="/cv/"><i class="fas fa-file-alt"></i> CV</a>
