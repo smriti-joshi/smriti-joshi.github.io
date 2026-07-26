@@ -65,7 +65,7 @@ A good part of my time also goes into building shared infrastructure for the fie
   <h2>Selected Publications</h2>
   <div class="publications">
     {% assign selected_keys = "joshi2026dense,garrucho2025mamamia,joshi2025tta,joshi2024uncertainty,cabrita2025stakeholder,joshi2021nn" | split: "," | join: "|" %}
-    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ selected_keys }}]* %}
+    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ selected_keys }}]* -g none %}
   </div>
   <p class="see-all"><a href="/publications/">See the full list of publications &rarr;</a></p>
 </section>
